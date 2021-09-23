@@ -3,10 +3,11 @@
 Tests performed by [@mbanon](https://github.com/mbanon) in August 2019.
 
 Benchmarked tools:
-* [Loomchild](https://github.com/mbanon/segment): Java tool, segmentation based on SRX rules.
+* [Loomchild](https://github.com/mbanon/segment): Java tool, segmentation based on SRX rules (several SRX files benchmarked)
 * [Moses](https://github.com/kpu/preprocess/blob/master/moses/ems/support/split-sentences.perl): Perl tool
 * [Ulysses](https://sourceforge.net/projects/bitextor/files/bitextor/bitextor-5.0/): Python 2 tool, statistical segmentation.
 * [NLTK](https://www.nltk.org/_modules/nltk/tokenize.html#sent_tokenize): Python 3 tool, segmentation based on a punctuation model.
+* [ersatz](https://github.com/rewicks/ersatz)
 
 Datasets and Gold Standards are located in this repository.
 Benchmarks ran on a Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz machine.
@@ -66,6 +67,8 @@ time python3.7 nltk_segmenter.py $L $LC \
 
 
 ### Results
+
+Table below is deprecated, see full results in  https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0
 
 |  **LANG** | **Gold** | **Loomchild - best SRX** | **Moses** | **Ulysses** | **NLTK** |
 | --- | --- | --- | --- | --- | --- |
