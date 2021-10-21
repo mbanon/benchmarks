@@ -16,15 +16,15 @@ Benchmarks ran on a Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz machine.
 
 Examples are provided for Icelandic ('is'), just change the `LN` (language name, starting with uppercase),  `LC` (language code, lowercased), `prefix`(corpus name prefix) and `rules` (name of the srx file, in case of running Loomchild) variables when running tests for other languages.
 
-#### Loomchild
+#### Loomchild (Java)
 
 Follow [installation guide](https://github.com/mbanon/segment/blob/master/README.md). 
 Once installed, move to `segment/segment-ui/target` and run:
 
 ```bash
 LC=is; prefix=UD; LN=Icelandic; rules=OmegaT; \ 
-time java -cp segment-ui-2.0.4-SNAPSHOT.jar:./segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i benchmarks/sentence_splitting/$prefix"_"$LN.dataset.gold -o $prefix"_"$LN"_"$rules.out -s ../../srx/$rules.srx  && \
-python3.8  benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_"$rules.out
+time java -cp segment-ui-2.0.4-SNAPSHOT.jar:./segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold -o $prefix"_"$LN"_"$rules.out -s ../../srx/$rules.srx  && \
+python3.8  benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_"$rules.out
 ```
 `rules` can be: `OmegaT`, `NonAggressive`, `PTDR` or `language_tools.segment`.
 
@@ -32,14 +32,14 @@ python3.8  benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_spli
 language, visit  https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0 for detailed results.)
 
 
-#### Moses
+#### Moses (Perl)
 
 Download from https://github.com/kpu/preprocess/. 
 
 ```bash
 LC=is; LN=Icelandic; prefix=UD; \ 
-time preprocess/moses/ems/support/split-sentences.perl -l $LC < benchmarks/sentence_splitting/$prefix"_"$LN.dataset > $prefix"_"$LN"_Moses".out && \
-python3.8  benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_Moses".out
+time preprocess/moses/ems/support/split-sentences.perl -l $LC < benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset > $prefix"_"$LN"_Moses".out && \
+python3.8  benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_Moses".out
 ```
 
 #### Ulysses
@@ -48,19 +48,19 @@ Download and extract [Bitextor 5.0](https://sourceforge.net/projects/bitextor/fi
 
 ```bash
 LC=is; prefix=UD; LN=Icelandic; \
-time python2.7  bitextor-5.0.0/ulysses/ulysses/ulysses.py  benchmarks/sentence_splitting/$prefix"_"$LN.dataset $prefix"_"$LN"_Ulysses".out && \ 
-python3.8 benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_Ulysses".out 
+time python2.7  bitextor-5.0.0/ulysses/ulysses/ulysses.py  benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset $prefix"_"$LN"_Ulysses".out && \ 
+python3.8 benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_Ulysses".out 
 ```
 
 
 #### NLTK
 
-Install NLTK by using pip: `python3.8 -m pip install nltk`. Download [this test script](https://gist.github.com/mbanon/84ad3b2f253ab0539d2eb32ec9cf8f2e).
+Install NLTK by using pip: `python3.8 -m pip install nltk`.
 
 ```bash
 LC=is; LN=Icelandic; prefix=UD; \
-time python3.8 nltk_segmenter.py $LN $LC benchmarks/sentence_splitting/$prefix"_"$LN.dataset  $prefix"_"$LN"_nltk".out && \
-python3.8 benchmarks/sentence_splitting/segmenteval.py  benchmarks/sentence_splitting/$prefix"_"$LN.dataset.gold  $prefix"_"$LN"_nltk".out
+time python3.8 benchmarks/sentence_splitting/nltk_segmenter.py $LN $LC benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset  $prefix"_"$LN"_nltk".out && \
+python3.8 benchmarks/sentence_splitting/segmenteval.py  benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold  $prefix"_"$LN"_nltk".out
 ```
 
 
@@ -70,10 +70,22 @@ Install Ersatz by using pip: `python3.8 -m pip install ersatz`.
 
 ```bash
 LC=is; LN=Icelandic; prefix=UD; \
-cat benchmarks/sentence_splitting/$prefix"_"$LN.dataset | \
+cat benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset | \
 time ersatz > $prefix"_"$LN"_ersatz".out && \
-python3.8 benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_ersatz".out
+python3.8 benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_ersatz".out
 ```
+
+### Moses (Python port)
+
+Install the Python port of Moses by using pip:  `python3.8 -m pip install sentence_splitter`
+
+```bash
+LC=is; LN=Icelandic; prefix=UD; \
+time python3.8 benchmarks/sentence_splitting/moses_segmenter.py  $LC benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset $prefix"_"$LN"_pymoses".out && \
+python3.8 benchmarks/sentence_splitting/segmenteval.py  benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_pymoses".out
+```
+
+###
 
 ### Results
 
