@@ -7,7 +7,8 @@ Benchmarked tools:
 * [Moses](https://github.com/kpu/preprocess/blob/master/moses/ems/support/split-sentences.perl): Perl tool
 * [Ulysses](https://sourceforge.net/projects/bitextor/files/bitextor/bitextor-5.0/): Python 2 tool, statistical segmentation.
 * [NLTK](https://www.nltk.org/_modules/nltk/tokenize.html#sent_tokenize): Python 3 tool, segmentation based on a punctuation model.
-* [ersatz](https://github.com/rewicks/ersatz)
+* [ersatz](https://github.co/rewicks/ersatz)
+* [sentence_splitter](https://github.com/mediacloud/sentence-splitter): Pyhon port of Moses.
 
 Datasets and Gold Standards are located in this repository.
 Benchmarks ran on a Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz machine.
@@ -75,7 +76,7 @@ time ersatz > $prefix"_"$LN"_ersatz".out && \
 python3.8 benchmarks/sentence_splitting/segmenteval.py benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_ersatz".out
 ```
 
-### Moses (Python port)
+#### Sentence Splitter (Moses Python port)
 
 Install the Python port of Moses by using pip:  `python3.8 -m pip install sentence_splitter`
 
