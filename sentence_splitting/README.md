@@ -9,6 +9,7 @@ Benchmarked tools:
 * [NLTK](https://www.nltk.org/_modules/nltk/tokenize.html#sent_tokenize): Python 3 tool, segmentation based on a punctuation model.
 * [ersatz](https://github.co/rewicks/ersatz)
 * [sentence_splitter](https://github.com/mediacloud/sentence-splitter): Pyhon port of Moses.
+* [loomchild-segment](https://github.com/zuny26/loomchild-segment-py): Python module for the Loomchild Java tool.
 
 Datasets and Gold Standards are located in this repository.
 Benchmarks ran on a Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz machine.
@@ -86,8 +87,15 @@ time python3.8 benchmarks/sentence_splitting/moses_segmenter.py  $LC benchmarks/
 python3.8 benchmarks/sentence_splitting/segmenteval.py  benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold $prefix"_"$LN"_pymoses".out
 ```
 
-###
+#### Loomchild Segment (Loomchild Python module)
 
+Install the Python module of Loomchild by using pip: `python3.8 -m pip install loomchild-segment`
+
+```bash
+LC=is; LN=Icelandic; prefix=UD; \
+time python3.8 benchmarks/sentence_splitting/loomchild_segmenter.py   $LC benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset  $prefix"_"$LN"_pyloomchild".out && \
+python3.8 benchmarks/sentence_splitting/segmenteval.py  benchmarks/sentence_splitting/testsets/$prefix"_"$LN.dataset.gold  $prefix"_"$LN"_pyloomchild".out
+```
 ### Results
 
 Table below is deprecated, see full results in  https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0
