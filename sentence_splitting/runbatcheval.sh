@@ -164,12 +164,15 @@ do
 			echo "============================="
                         ;;
                 ersatz) 
-                	#PYTHON -m pip install ersatz
+                	#$PYTHON -m pip install ersatz
                 	time (cat $TESTFILE | $PYTHON -m ersatz > $OUTFILE)
 			$PYTHON segmenteval.py $GOLD $OUTFILE
 			echo "============================="
                         ;;
                 pymoses)
+                	#$PYTHON -m pip install sentence_splitter
+                	time $PYTHON moses_segmenter.py  $LC $TESTFILE $OUTFILE
+			$PYTHON segmenteval.py $GOLD $OUTFILE
                         ;;
                 pyloomchild)
                         ;;
