@@ -3,17 +3,21 @@ TOOL=$2
 
 #Edit the vars below to adapt this script to your environment
 PYTHON=python3.10
+#loomchild
 SEGMENT_TARGET_PATH=/home/mbanon/segment/segment-ui/target/
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+#moses
+PREPROCESS_PATH=/home/mbanon/preprocess/
 
-PREFIX=UD
+
+PREFIX=UD #UniversalDependencies
 case $LC in
 	bg)
 		LN=Bulgarian
 		;;
 	cnr)
 		LN=Montenegrin
-		PREFIX=MESUBS
+		PREFIX=MESUBS #MontenegrinSubs
 		;;
 	cs)
 		LN=Czech
@@ -62,7 +66,7 @@ case $LC in
 		;;
 	mk)
 		LN=Macedonian
-		PREFIX=SETIMES
+		PREFIX=SETIMES #Souteast European Times  
 		;;
 	mt)
 		LN=Maltese
@@ -123,19 +127,25 @@ for FLAVOUR in none all mixed
 do
 
         echo "Testset:" $FLAVOUR
-
+        TESTFILE=testsets/$PREFIX"_"$LN.dataset.$FLAVOUR
+        OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL.$FLAVOUR.out
+        
         case $TOOL in
                 loomchild)
+                	#Installation: https://github.com/mbanon/segment/blob/master/README.md#installation 
                         for RULES in OmegaT NonAggressive PTDR language_tools.segment
                         do
                                 echo "Loomchild SRX rules: " $RULES
-                                OUTFILE=outfiles/$PREFIX"_"$LC"_"$RULES.$FLAVOUR.out
-                                time java -cp $SEGMENT_TARGET_PATH/segment-ui-2.0.4-SNAPSHOT.jar:$SEGMENT_TARGET_PATH/segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i $GOLD -o $OUTFILE -s $SEGMENT_TARGET_PATH/../../srx/$RULES.srx
+                                OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL"_"$RULES.$FLAVOUR.out
+                                time java -cp $SEGMENT_TARGET_PATH/segment-ui-2.0.4-SNAPSHOT.jar:$SEGMENT_TARGET_PATH/segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i $TESTFILE -o $OUTFILE -s $SEGMENT_TARGET_PATH/../../srx/$RULES.srx
                                 $PYTHON  segmenteval.py $GOLD $OUTFILE
                                 echo "============================="
                         done
                         ;;
                 moses)  
+                	#git clone https://github.com/kpu/preprocess/
+                	time $PREPROCESS_PATH/moses/ems/support/split-sentences.perl -l $LC < $TESTFILE > $OUTFILE
+			$PYTHON  segmenteval.py $GOLD $OUTFILE                	
                         ;;
                 ulysses)
                         ;;
