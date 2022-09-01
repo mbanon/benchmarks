@@ -2,12 +2,15 @@ LC=$1
 TOOL=$2
 
 #Edit the vars below to adapt this script to your environment
+PYTHON2=python2.7
 PYTHON=python3.10
 #loomchild
-SEGMENT_TARGET_PATH=/home/mbanon/segment/segment-ui/target/
+SEGMENT_TARGET_PATH=~/segment/segment-ui/target/
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 #moses
-PREPROCESS_PATH=/home/mbanon/preprocess/
+PREPROCESS_PATH=~/preprocess/
+#ulysses
+BITEXTOR_PATH=~/bitextor-5.0.0/
 
 
 PREFIX=UD #UniversalDependencies
@@ -126,7 +129,7 @@ echo "#################################"
 for FLAVOUR in none all mixed
 do
 
-        echo "Testset:" $FLAVOUR
+        echo "Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text):" $FLAVOUR
         TESTFILE=testsets/$PREFIX"_"$LN.dataset.$FLAVOUR
         OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL.$FLAVOUR.out
         
@@ -146,8 +149,13 @@ do
                 	#git clone https://github.com/kpu/preprocess/
                 	time $PREPROCESS_PATH/moses/ems/support/split-sentences.perl -l $LC < $TESTFILE > $OUTFILE
 			$PYTHON  segmenteval.py $GOLD $OUTFILE                	
+			echo "============================="
                         ;;
                 ulysses)
+                	#wget https://downloads.sourceforge.net/project/bitextor/bitextor/bitextor-5.0/bitextor-5.0.0-RC3.tar.gz
+                	time $PYTHON2  $BITEXTOR_PATH/ulysses/ulysses/ulysses.py  $TESTFILE $OUTFILE
+			$PYTHON segmenteval.py $GOLD $OUTFILE
+			echo "============================="
                         ;;
                 nltk)   
                         ;;
