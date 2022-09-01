@@ -127,7 +127,6 @@ echo "Tool: " $TOOL
 echo "#################################"
 	
 for FLAVOUR in none all mixed
-#for FLAVOUR in mixed all none
 do
 
         echo "Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text):" $FLAVOUR
@@ -165,6 +164,10 @@ do
 			echo "============================="
                         ;;
                 ersatz) 
+                	#PYTHON -m pip install ersatz
+                	time (cat $TESTFILE | $PYTHON -m ersatz > $OUTFILE)
+			$PYTHON segmenteval.py $GOLD $OUTFILE
+			echo "============================="
                         ;;
                 pymoses)
                         ;;
