@@ -171,10 +171,13 @@ do
                         ;;
                 pymoses)
                 	#$PYTHON -m pip install sentence_splitter
-                	time $PYTHON moses_segmenter.py  $LC $TESTFILE $OUTFILE
+                	time $PYTHON moses_segmenter.py $LC $TESTFILE $OUTFILE
 			$PYTHON segmenteval.py $GOLD $OUTFILE
                         ;;
                 pyloomchild)
+                	#$PYTHON -m pip install loomchild-segment
+                	time $PYTHON loomchild_segmenter.py $LC $TESTFILE $OUTFILE
+			$PYTHON segmenteval.py $GOLD $OUTFILE
                         ;;
                 *)
                         echo "Unsupported tool"
@@ -183,6 +186,3 @@ do
         esac
 done
 
-#gold=testsets/$prefix"_"$LN.dataset.gold; testset=testsets/$prefix"_"$LN".dataset".$flavour; outfile=outfiles/$prefix"_"$LN"_"$flavour"_nltk.out";time python3.10 nltk_segmenter.py $LN $LC $testset  $outfile && python3.10 segmenteval.py  $gold $outfile
-#LC=is; LN=Icelandic; prefix=UD; flavour=all; gold=testsets/$prefix"_"$LN.dataset.gold; testset=testsets/$prefix"_"$LN".dataset".$flavour; outfile=outfiles/$prefix"_"$LN"_"$flavour"_nltk.out";\
-#time python3.10 nltk_segmenter.py $LN $LC $testset  $outfile && python3.8 segmenteval.py  $gold $outfile
