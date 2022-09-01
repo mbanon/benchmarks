@@ -14,7 +14,6 @@ except:
 parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]), formatter_class=argparse.ArgumentDefaultsHelpFormatter, description=__doc__)
 
 parser.add_argument('lang',  type=str, help="Language")  
-parser.add_argument('langcode', type=str, help="Language code")
 parser.add_argument('inputfile', type=str, help="Input file")
 parser.add_argument('outputfile', type=str, help="Output file")
 
