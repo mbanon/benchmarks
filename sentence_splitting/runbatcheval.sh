@@ -44,7 +44,7 @@ case $LC in
 		LN=Estonian
 		;;
 	fi)
-		LN=Finish
+		LN=Finnish
 		;;
 	fr)
 		LN=French
