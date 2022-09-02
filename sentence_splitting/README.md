@@ -75,6 +75,10 @@ Take a look to `runbatcheval.sh` and change paths if needed. Then run
 #### Supported tools
 `loomchild, moses, ulysses, nltk, ersatz, pymoses, pyloomchild`
 
+Several SRX rules files are provided. The tool autoselects the one with the higher F-1 score
+for the requested language (based on the benchmark results located in
+`/benchmarks/{LANGCODE}.loomchild`
+
 ### Results
 
 https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0

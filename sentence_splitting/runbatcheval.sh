@@ -17,102 +17,134 @@ PREFIX=UD #UniversalDependencies
 case $LC in
 	bg)
 		LN=Bulgarian
+		RULES=OmegaT
 		;;
 	cnr)
 		LN=Montenegrin
 		PREFIX=MESUBS #MontenegrinSubs
+		RULES=NonAggressive
 		;;
 	cs)
 		LN=Czech
+		RULES=OmegaT
 		;;
 	da)
 		LN=Danish
+		RULES=language_tools.segment
 		;;
 	de)
 		LN=German
+		RULES=language_tools.segment
 		;;
 	el)
 		LN=Greek
+		RULES=PTDR
 		;;
 	en)
 		LN=English
+		RULES=language_tools.segment
 		;;			
  	es)
 		LN=Spanish
+		RULES=PTDR
 		;;
 	et)
 		LN=Estonian
+		RULES=PTDR
 		;;
 	fi)
 		LN=Finnish
+		RULES=PTDR
 		;;
 	fr)
 		LN=French
+		RULES=language_tools.segment
 		;;
 	hr)
 		LN=Croatian
+		RULES=PTDR
 		;;
 	hu)
 		LN=Hungarian
+		RULES=PTDR
 		;;
 	is)
 		LN=Icelandic
+		RULES=language_tools.segment
 		;;
-	it)
+	it)	
 		LN=Italian
+		RULES=NonAggressive
 		;;
 	lt)
 		LN=Lithuanian
+		RULES=OmegaT
 		;;
 	lv)	
 		LN=Latvian
+		RULES=PTDR
 		;;
 	mk)
 		LN=Macedonian
 		PREFIX=SETIMES #Souteast European Times  
+		RULES=OmegaT
 		;;
 	mt)
 		LN=Maltese
+		RULES=PTDR
 		;;
 	nb)
 		LN=Norwegian-Bokmaal
+		RULES=NonAggressive
 		;;
 	nl)
 		LN=Dutch
+		RULES=language_tools.segment
 		;;
 	nn)
 		LN=Norwegian-Nynorsk
+		RULES=NonAggressive
 		;;
 	pl)
 		LN=Polish
+		RULES=language_tools.segment
 		;;
 	pt)
 		LN=Portuguese
+		RULES=language_tools.segment
 		;;
 	ro)
 		LN=Romanian
+		RULES=language_tools.segment
 		;;
 	sk)
 		LN=Slovak
+		RULES=language_tools.segment	
 		;;
 	sl)
 		LN=Slovenian
+		RULES=OmegaT
 		;;
 	sq)
 		LN=Albanian
 		PREFIX=SETIMES
+		RULES=PTDR
 		;;
 	sr)
 		LN=Serbian
+		RULES=language_tools.segment
 		;;	
 	sv)
 		LN=Swedish
+		RULES=OmegaT
 		;;
 	tk)
 		LN=Turkish
+		RULES=NonAggressive
 		;;
 	uk)
 		LN=Ukrainian
+		RULES=language_tools.segment
 		;;	
 					
 esac
@@ -136,14 +168,11 @@ do
         case $TOOL in
                 loomchild)
                 	#Installation: https://github.com/mbanon/segment/blob/master/README.md#installation 
-                        for RULES in OmegaT NonAggressive PTDR language_tools.segment
-                        do
-                                echo "Loomchild SRX rules: " $RULES
-                                OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL"_"$RULES.$FLAVOUR.out
-                                time java -cp $SEGMENT_TARGET_PATH/segment-ui-2.0.4-SNAPSHOT.jar:$SEGMENT_TARGET_PATH/segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i $TESTFILE -o $OUTFILE -s $SEGMENT_TARGET_PATH/../../srx/$RULES.srx
-                                $PYTHON  segmenteval.py $GOLD $OUTFILE
-                                echo "============================="
-                        done
+                        echo "Loomchild SRX rules: " $RULES
+                        OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL"_"$RULES.$FLAVOUR.out
+                        time java -cp $SEGMENT_TARGET_PATH/segment-ui-2.0.4-SNAPSHOT.jar:$SEGMENT_TARGET_PATH/segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i $TESTFILE -o $OUTFILE -s $SEGMENT_TARGET_PATH/../../srx/$RULES.srx
+                        $PYTHON  segmenteval.py $GOLD $OUTFILE
+                        echo "============================="
                         ;;
                 moses)  
                 	#git clone https://github.com/kpu/preprocess/
