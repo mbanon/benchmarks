@@ -87,6 +87,9 @@ Several SRX rules files are provided in `srxrules`. The tool autoselects the one
 for the requested language (based on the benchmark results located in
 `/benchmarks_results/srx-rules/{LANGCODE}.loomchild`
 
+### Run everything
+
+In case you want to run benchmarks for all supported tools in all supported languages, simply run `./runeverything.sh`. Results will be stored in`/benchmark_results/{TOOL}/{LANGUAGECODE}.{TOOL}`
 ### Results
 
 Coming soon...
