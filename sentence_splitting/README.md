@@ -78,7 +78,7 @@ Take a look to `runbatcheval.sh` and change paths if needed. Then run
 
 #### Supported language codes
 
-`bg, cnr, cs, da, de, el, en, es, et, fi, fr, hr, hu, is, it, lt, lv, mk, mt, nb, nl, nn, pl, pt, ro, sk, sl, sq, sr, sv, tk, uk`
+`bg, cnr, cs, da, de, el, en, es, et, fi, fr, hr, hu, is, it, lt, lv, mk, mt, nb, nl, nn, pl, pt, ro, sk, sl, sq, sr, sv, tr, uk`
 
 #### Supported tools
 `loomchild, moses, ulysses, nltk, ersatz, pymoses, pyloomchild, rustsrx`
