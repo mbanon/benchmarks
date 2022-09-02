@@ -1,0 +1,188 @@
+#################################
+es (Spanish)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.568s
+user	0m1.489s
+sys	0m0.048s
+True positives: 15546
+False positives: 233
+False negatives: 467
+Precision: 0.985
+Recall: 0.971
+F-measure: 0.978
+=============================
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.550s
+user	0m1.537s
+sys	0m0.111s
+True positives: 15888
+False positives: 892
+False negatives: 125
+Precision: 0.947
+Recall: 0.992
+F-measure: 0.969
+=============================
+Loomchild SRX rules:  PTDR
+
+real	0m0.528s
+user	0m1.452s
+sys	0m0.128s
+True positives: 15548
+False positives: 234
+False negatives: 465
+Precision: 0.985
+Recall: 0.971
+F-measure: 0.978
+=============================
+Loomchild SRX rules:  language_tools.segment
+
+real	0m1.559s
+user	0m3.429s
+sys	0m0.098s
+True positives: 15593
+False positives: 636
+False negatives: 420
+Precision: 0.961
+Recall: 0.974
+F-measure: 0.967
+=============================
+Loomchild SRX rules:  rust
+
+real	0m2.376s
+user	0m4.350s
+sys	0m0.108s
+True positives: 15548
+False positives: 380
+False negatives: 465
+Precision: 0.976
+Recall: 0.971
+F-measure: 0.974
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.536s
+user	0m1.485s
+sys	0m0.061s
+True positives: 16013
+False positives: 233
+False negatives: 0
+Precision: 0.986
+Recall: 1.000
+F-measure: 0.993
+=============================
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.522s
+user	0m1.482s
+sys	0m0.069s
+True positives: 16013
+False positives: 892
+False negatives: 0
+Precision: 0.947
+Recall: 1.000
+F-measure: 0.973
+=============================
+Loomchild SRX rules:  PTDR
+
+real	0m0.555s
+user	0m1.563s
+sys	0m0.088s
+True positives: 16013
+False positives: 234
+False negatives: 0
+Precision: 0.986
+Recall: 1.000
+F-measure: 0.993
+=============================
+Loomchild SRX rules:  language_tools.segment
+
+real	0m1.560s
+user	0m3.205s
+sys	0m0.097s
+True positives: 16013
+False positives: 636
+False negatives: 0
+Precision: 0.962
+Recall: 1.000
+F-measure: 0.981
+=============================
+Loomchild SRX rules:  rust
+
+real	0m2.380s
+user	0m4.288s
+sys	0m0.111s
+True positives: 16013
+False positives: 380
+False negatives: 0
+Precision: 0.977
+Recall: 1.000
+F-measure: 0.988
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.522s
+user	0m1.465s
+sys	0m0.053s
+True positives: 15630
+False positives: 233
+False negatives: 383
+Precision: 0.985
+Recall: 0.976
+F-measure: 0.981
+=============================
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.518s
+user	0m1.426s
+sys	0m0.076s
+True positives: 15914
+False positives: 892
+False negatives: 99
+Precision: 0.947
+Recall: 0.994
+F-measure: 0.970
+=============================
+Loomchild SRX rules:  PTDR
+
+real	0m0.586s
+user	0m1.619s
+sys	0m0.109s
+True positives: 15632
+False positives: 234
+False negatives: 381
+Precision: 0.985
+Recall: 0.976
+F-measure: 0.981
+=============================
+Loomchild SRX rules:  language_tools.segment
+
+real	0m1.526s
+user	0m3.124s
+sys	0m0.101s
+True positives: 15671
+False positives: 636
+False negatives: 342
+Precision: 0.961
+Recall: 0.979
+F-measure: 0.970
+=============================
+Loomchild SRX rules:  rust
+
+real	0m2.379s
+user	0m4.393s
+sys	0m0.076s
+True positives: 15640
+False positives: 380
+False negatives: 373
+Precision: 0.976
+Recall: 0.977
+F-measure: 0.976
+=============================

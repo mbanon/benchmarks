@@ -1,0 +1,218 @@
+#################################
+hr (Croatian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.459s
+user	0m1.167s
+sys	0m0.057s
+True positives: 8491
+False positives: 162
+False negatives: 398
+Precision: 0.981
+Recall: 0.955
+F-measure: 0.968
+=============================
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.463s
+user	0m1.201s
+sys	0m0.045s
+True positives: 8539
+False positives: 1611
+False negatives: 350
+Precision: 0.841
+Recall: 0.961
+F-measure: 0.897
+=============================
+Loomchild SRX rules:  PTDR
+
+real	0m0.501s
+user	0m1.291s
+sys	0m0.065s
+True positives: 8520
+False positives: 130
+False negatives: 369
+Precision: 0.985
+Recall: 0.958
+F-measure: 0.972
+=============================
+Loomchild SRX rules:  language_tools.segment
+java.lang.IllegalStateException: Buffer too short - it must be at least as long as the longest segment in the text; try using the bufferLength option
+	at net.loomchild.segment.srx.SrxTextIterator.next(SrxTextIterator.java:209)
+	at net.loomchild.segment.ui.console.Segment.performSegment(Segment.java:656)
+	at net.loomchild.segment.ui.console.Segment.createAndSegment(Segment.java:545)
+	at net.loomchild.segment.ui.console.Segment.segment(Segment.java:245)
+	at net.loomchild.segment.ui.console.Segment.run(Segment.java:127)
+	at net.loomchild.segment.ui.console.Segment.main(Segment.java:99)
+
+real	0m0.548s
+user	0m1.337s
+sys	0m0.080s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================
+Loomchild SRX rules:  rust
+java.lang.IllegalStateException: Buffer too short - it must be at least as long as the longest segment in the text; try using the bufferLength option
+	at net.loomchild.segment.srx.SrxTextIterator.next(SrxTextIterator.java:209)
+	at net.loomchild.segment.ui.console.Segment.performSegment(Segment.java:656)
+	at net.loomchild.segment.ui.console.Segment.createAndSegment(Segment.java:545)
+	at net.loomchild.segment.ui.console.Segment.segment(Segment.java:245)
+	at net.loomchild.segment.ui.console.Segment.run(Segment.java:127)
+	at net.loomchild.segment.ui.console.Segment.main(Segment.java:99)
+
+real	0m0.572s
+user	0m1.505s
+sys	0m0.049s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.481s
+user	0m1.236s
+sys	0m0.070s
+True positives: 8889
+False positives: 162
+False negatives: 0
+Precision: 0.982
+Recall: 1.000
+F-measure: 0.991
+=============================
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.497s
+user	0m1.284s
+sys	0m0.049s
+True positives: 8889
+False positives: 1611
+False negatives: 0
+Precision: 0.847
+Recall: 1.000
+F-measure: 0.917
+=============================
+Loomchild SRX rules:  PTDR
+
+real	0m0.491s
+user	0m1.312s
+sys	0m0.057s
+True positives: 8889
+False positives: 130
+False negatives: 0
+Precision: 0.986
+Recall: 1.000
+F-measure: 0.993
+=============================
+Loomchild SRX rules:  language_tools.segment
+java.lang.IllegalStateException: Buffer too short - it must be at least as long as the longest segment in the text; try using the bufferLength option
+	at net.loomchild.segment.srx.SrxTextIterator.next(SrxTextIterator.java:209)
+	at net.loomchild.segment.ui.console.Segment.performSegment(Segment.java:656)
+	at net.loomchild.segment.ui.console.Segment.createAndSegment(Segment.java:545)
+	at net.loomchild.segment.ui.console.Segment.segment(Segment.java:245)
+	at net.loomchild.segment.ui.console.Segment.run(Segment.java:127)
+	at net.loomchild.segment.ui.console.Segment.main(Segment.java:99)
+
+real	0m0.552s
+user	0m1.426s
+sys	0m0.041s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================
+Loomchild SRX rules:  rust
+java.lang.IllegalStateException: Buffer too short - it must be at least as long as the longest segment in the text; try using the bufferLength option
+	at net.loomchild.segment.srx.SrxTextIterator.next(SrxTextIterator.java:209)
+	at net.loomchild.segment.ui.console.Segment.performSegment(Segment.java:656)
+	at net.loomchild.segment.ui.console.Segment.createAndSegment(Segment.java:545)
+	at net.loomchild.segment.ui.console.Segment.segment(Segment.java:245)
+	at net.loomchild.segment.ui.console.Segment.run(Segment.java:127)
+	at net.loomchild.segment.ui.console.Segment.main(Segment.java:99)
+
+real	0m0.601s
+user	0m1.577s
+sys	0m0.078s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.484s
+user	0m1.254s
+sys	0m0.074s
+True positives: 8562
+False positives: 162
+False negatives: 327
+Precision: 0.981
+Recall: 0.963
+F-measure: 0.972
+=============================
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.500s
+user	0m1.262s
+sys	0m0.061s
+True positives: 8602
+False positives: 1611
+False negatives: 287
+Precision: 0.842
+Recall: 0.968
+F-measure: 0.901
+=============================
+Loomchild SRX rules:  PTDR
+
+real	0m0.514s
+user	0m1.313s
+sys	0m0.073s
+True positives: 8586
+False positives: 130
+False negatives: 303
+Precision: 0.985
+Recall: 0.966
+F-measure: 0.975
+=============================
+Loomchild SRX rules:  language_tools.segment
+java.lang.IllegalStateException: Buffer too short - it must be at least as long as the longest segment in the text; try using the bufferLength option
+	at net.loomchild.segment.srx.SrxTextIterator.next(SrxTextIterator.java:209)
+	at net.loomchild.segment.ui.console.Segment.performSegment(Segment.java:656)
+	at net.loomchild.segment.ui.console.Segment.createAndSegment(Segment.java:545)
+	at net.loomchild.segment.ui.console.Segment.segment(Segment.java:245)
+	at net.loomchild.segment.ui.console.Segment.run(Segment.java:127)
+	at net.loomchild.segment.ui.console.Segment.main(Segment.java:99)
+
+real	0m0.545s
+user	0m1.375s
+sys	0m0.085s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================
+Loomchild SRX rules:  rust
+java.lang.IllegalStateException: Buffer too short - it must be at least as long as the longest segment in the text; try using the bufferLength option
+	at net.loomchild.segment.srx.SrxTextIterator.next(SrxTextIterator.java:209)
+	at net.loomchild.segment.ui.console.Segment.performSegment(Segment.java:656)
+	at net.loomchild.segment.ui.console.Segment.createAndSegment(Segment.java:545)
+	at net.loomchild.segment.ui.console.Segment.segment(Segment.java:245)
+	at net.loomchild.segment.ui.console.Segment.run(Segment.java:127)
+	at net.loomchild.segment.ui.console.Segment.main(Segment.java:99)
+
+real	0m0.590s
+user	0m1.650s
+sys	0m0.076s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================

@@ -2,7 +2,6 @@ LC=$1
 TOOL=$2
 
 #Edit the vars below to adapt this script to your environment
-PYTHON2=python2.7
 PYTHON=python3.10
 #loomchild
 SEGMENT_TARGET_PATH=~/segment/segment-ui/target/
@@ -11,7 +10,9 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 PREPROCESS_PATH=~/preprocess/
 #ulysses
 BITEXTOR_PATH=~/bitextor-5.0.0/
-
+PYTHON2=python2.7
+#rustsrx
+RUSTSRX_PATH=~/srx/target/release/
 
 PREFIX=UD #UniversalDependencies
 case $LC in
@@ -58,7 +59,7 @@ case $LC in
 		;;
 	fr)
 		LN=French
-		RULES=language_tools.segment
+		RULES=rust
 		;;
 	hr)
 		LN=Croatian
@@ -99,7 +100,7 @@ case $LC in
 		;;
 	nl)
 		LN=Dutch
-		RULES=language_tools.segment
+		RULES=rust
 		;;
 	nn)
 		LN=Norwegian-Nynorsk
@@ -144,7 +145,7 @@ case $LC in
 		;;
 	uk)
 		LN=Ukrainian
-		RULES=language_tools.segment
+		RULES=rust
 		;;	
 					
 esac
@@ -164,15 +165,17 @@ do
         echo "Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text):" $FLAVOUR
         TESTFILE=testsets/$PREFIX"_"$LN.dataset.$FLAVOUR
         OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL.$FLAVOUR.out
-        
         case $TOOL in
                 loomchild)
-                	#Installation: https://github.com/mbanon/segment/blob/master/README.md#installation 
-                        echo "Loomchild SRX rules: " $RULES
-                        OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL"_"$RULES.$FLAVOUR.out
-                        time java -cp $SEGMENT_TARGET_PATH/segment-ui-2.0.4-SNAPSHOT.jar:$SEGMENT_TARGET_PATH/segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i $TESTFILE -o $OUTFILE -s $SEGMENT_TARGET_PATH/../../srx/$RULES.srx
-                        $PYTHON  segmenteval.py $GOLD $OUTFILE
-                        echo "============================="
+                	#for RULES in OmegaT NonAggressive PTDR language_tools.segment rust
+	                #do
+	                	#Installation: https://github.com/mbanon/segment/blob/master/README.md#installation 
+	                        echo "Loomchild SRX rules: " $RULES
+	                        OUTFILE=outfiles/$PREFIX"_"$LC"_"$TOOL"_"$RULES.$FLAVOUR.out
+	                        time java -cp $SEGMENT_TARGET_PATH/segment-ui-2.0.4-SNAPSHOT.jar:$SEGMENT_TARGET_PATH/segment-2.0.4-SNAPSHOT/lib/* net.loomchild.segment.ui.console.Segment -l $LC -i $TESTFILE -o $OUTFILE -s srxrules/$RULES.srx
+	                        $PYTHON  segmenteval.py $GOLD $OUTFILE
+        	                echo "============================="
+        	        #done
                         ;;
                 moses)  
                 	#git clone https://github.com/kpu/preprocess/
@@ -208,6 +211,12 @@ do
                 	time $PYTHON loomchild_segmenter.py $LC $TESTFILE $OUTFILE
 			$PYTHON segmenteval.py $GOLD $OUTFILE
                         ;;
+                rustsrx)
+                	#git clone https://github.com/lpla/srx
+                	#cargo build --all-features --release
+                	time $RUSTSRX_PATH/srx --input $TESTFILE --output $OUTFILE --srxfile srxrules/rust.srx
+                        $PYTHON segmenteval.py $GOLD $OUTFILE
+			;;                	
                 *)
                         echo "Unsupported tool"
                         exit 1

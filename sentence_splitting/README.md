@@ -1,6 +1,6 @@
 # Sentence splitting tests
 
-Tests performed by [@mbanon](https://github.com/mbanon).
+Tests performed by [@mbanon](https://github.com/mbanon), in sept'22.
 
 Benchmarked tools:
 * [Loomchild](https://github.com/mbanon/segment): Java tool, segmentation based on SRX rules (several SRX files benchmarked)
@@ -10,6 +10,7 @@ Benchmarked tools:
 * [ersatz](https://github.co/rewicks/ersatz)
 * [sentence_splitter](https://github.com/mediacloud/sentence-splitter): Pyhon port of Moses.
 * [loomchild-segment](https://github.com/zuny26/loomchild-segment-py): Python module for the Loomchild Java tool.
+* [srx](https://github.com/bminixhofer/srx): Rust reimplementation of the SRX standard
 
 Gold Standards are located in this repository.
 Benchmarks ran on a Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz machine.
@@ -61,6 +62,13 @@ Download and extract [Bitextor 5.0](https://sourceforge.net/projects/bitextor/fi
 
 `python3 -m pip install loomchild-segment`
 
+#### srx (Rust)
+
+```
+git clone https://github.com/lpla/srx
+cargo build --all-features --release
+```
+
 ### Run the tests
 
 Take a look to `runbatcheval.sh` and change paths if needed. Then run
@@ -73,12 +81,14 @@ Take a look to `runbatcheval.sh` and change paths if needed. Then run
 `bg, cnr, cs, da, de, el, en, es, et, fi, fr, hr, hu, is, it, lt, lv, mk, mt, nb, nl, nn, pl, pt, ro, sk, sl, sq, sr, sv, tk, uk`
 
 #### Supported tools
-`loomchild, moses, ulysses, nltk, ersatz, pymoses, pyloomchild`
+`loomchild, moses, ulysses, nltk, ersatz, pymoses, pyloomchild, rustsrx`
 
-Several SRX rules files are provided. The tool autoselects the one with the higher F-1 score
+Several SRX rules files are provided in `srxrules`. The tool autoselects the one with the higher F-1 score
 for the requested language (based on the benchmark results located in
-`/benchmarks/{LANGCODE}.loomchild`
+`/benchmarks_results/srx-rules/{LANGCODE}.loomchild`
 
 ### Results
 
-https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0
+Coming soon...
+
+Deprecated: https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0
