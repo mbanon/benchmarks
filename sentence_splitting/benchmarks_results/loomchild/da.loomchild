@@ -1,0 +1,44 @@
+#################################
+da (Danish)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.667s
+user	0m1.922s
+sys	0m0.092s
+True positives: 4912
+False positives: 317
+False negatives: 600
+Precision: 0.939
+Recall: 0.891
+F-measure: 0.915
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.706s
+user	0m2.074s
+sys	0m0.064s
+True positives: 5512
+False positives: 317
+False negatives: 0
+Precision: 0.946
+Recall: 1.000
+F-measure: 0.972
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.683s
+user	0m1.956s
+sys	0m0.088s
+True positives: 5028
+False positives: 317
+False negatives: 484
+Precision: 0.941
+Recall: 0.912
+F-measure: 0.926
+=============================

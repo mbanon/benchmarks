@@ -1,0 +1,41 @@
+#################################
+lv (Latvian)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.040s
+user	0m0.036s
+sys	0m0.006s
+True positives: 5950
+False positives: 960
+False negatives: 346
+Precision: 0.861
+Recall: 0.945
+F-measure: 0.901
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.039s
+user	0m0.034s
+sys	0m0.007s
+True positives: 6296
+False positives: 6909
+False negatives: 0
+Precision: 0.477
+Recall: 1.000
+F-measure: 0.646
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.038s
+user	0m0.036s
+sys	0m0.004s
+True positives: 6015
+False positives: 2035
+False negatives: 281
+Precision: 0.747
+Recall: 0.955
+F-measure: 0.839
+=============================

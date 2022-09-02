@@ -1,0 +1,50 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: mt
+WARNING: No known abbreviations for language 'mt', attempting fall-back to English version...
+
+real	0m0.237s
+user	0m0.233s
+sys	0m0.004s
+True positives: 1844
+False positives: 160
+False negatives: 230
+Precision: 0.920
+Recall: 0.889
+F-measure: 0.904
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: mt
+WARNING: No known abbreviations for language 'mt', attempting fall-back to English version...
+
+real	0m0.243s
+user	0m0.243s
+sys	0m0.000s
+True positives: 1844
+False positives: 160
+False negatives: 230
+Precision: 0.920
+Recall: 0.889
+F-measure: 0.904
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: mt
+WARNING: No known abbreviations for language 'mt', attempting fall-back to English version...
+
+real	0m0.238s
+user	0m0.230s
+sys	0m0.008s
+True positives: 1844
+False positives: 160
+False negatives: 230
+Precision: 0.920
+Recall: 0.889
+F-measure: 0.904
+=============================

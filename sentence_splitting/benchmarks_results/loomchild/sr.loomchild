@@ -1,0 +1,44 @@
+#################################
+sr (Serbian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.637s
+user	0m1.854s
+sys	0m0.069s
+True positives: 3715
+False positives: 30
+False negatives: 176
+Precision: 0.992
+Recall: 0.955
+F-measure: 0.973
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.609s
+user	0m1.767s
+sys	0m0.069s
+True positives: 3891
+False positives: 30
+False negatives: 0
+Precision: 0.992
+Recall: 1.000
+F-measure: 0.996
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.634s
+user	0m1.852s
+sys	0m0.069s
+True positives: 3741
+False positives: 30
+False negatives: 150
+Precision: 0.992
+Recall: 0.961
+F-measure: 0.977
+=============================

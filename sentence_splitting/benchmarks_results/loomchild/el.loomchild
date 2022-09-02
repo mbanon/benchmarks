@@ -1,0 +1,44 @@
+#################################
+el (Greek)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  PTDR
+
+real	0m0.423s
+user	0m1.054s
+sys	0m0.056s
+True positives: 2308
+False positives: 94
+False negatives: 213
+Precision: 0.961
+Recall: 0.916
+F-measure: 0.938
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  PTDR
+
+real	0m0.435s
+user	0m1.095s
+sys	0m0.060s
+True positives: 2521
+False positives: 94
+False negatives: 0
+Precision: 0.964
+Recall: 1.000
+F-measure: 0.982
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  PTDR
+
+real	0m0.430s
+user	0m1.041s
+sys	0m0.041s
+True positives: 2349
+False positives: 94
+False negatives: 172
+Precision: 0.962
+Recall: 0.932
+F-measure: 0.946
+=============================

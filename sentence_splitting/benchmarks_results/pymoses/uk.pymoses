@@ -1,0 +1,38 @@
+#################################
+uk (Ukrainian)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m4.324s
+user	0m3.476s
+sys	0m0.848s
+True positives: 5434
+False positives: 120
+False negatives: 432
+Precision: 0.978
+Recall: 0.926
+F-measure: 0.952
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.654s
+user	0m0.646s
+sys	0m0.008s
+True positives: 5866
+False positives: 120
+False negatives: 0
+Precision: 0.980
+Recall: 1.000
+F-measure: 0.990
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.541s
+user	0m0.541s
+sys	0m0.000s
+True positives: 5512
+False positives: 120
+False negatives: 354
+Precision: 0.979
+Recall: 0.940
+F-measure: 0.959

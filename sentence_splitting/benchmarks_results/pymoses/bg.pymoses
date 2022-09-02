@@ -1,0 +1,38 @@
+#################################
+bg (Bulgarian)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m10.639s
+user	0m9.246s
+sys	0m1.392s
+True positives: 9397
+False positives: 197
+False negatives: 1741
+Precision: 0.979
+Recall: 0.844
+F-measure: 0.907
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.124s
+user	0m1.112s
+sys	0m0.012s
+True positives: 11138
+False positives: 197
+False negatives: 0
+Precision: 0.983
+Recall: 1.000
+F-measure: 0.991
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.888s
+user	0m0.876s
+sys	0m0.012s
+True positives: 9709
+False positives: 197
+False negatives: 1429
+Precision: 0.980
+Recall: 0.872
+F-measure: 0.923

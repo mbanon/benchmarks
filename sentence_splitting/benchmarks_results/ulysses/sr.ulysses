@@ -1,0 +1,41 @@
+#################################
+sr (Serbian)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.894s
+user	0m0.866s
+sys	0m0.028s
+True positives: 2248
+False positives: 6
+False negatives: 1643
+Precision: 0.997
+Recall: 0.578
+F-measure: 0.732
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.898s
+user	0m0.877s
+sys	0m0.020s
+True positives: 3891
+False positives: 6
+False negatives: 0
+Precision: 0.998
+Recall: 1.000
+F-measure: 0.999
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.852s
+user	0m0.839s
+sys	0m0.013s
+True positives: 2539
+False positives: 6
+False negatives: 1352
+Precision: 0.998
+Recall: 0.653
+F-measure: 0.789
+=============================

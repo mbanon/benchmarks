@@ -1,0 +1,38 @@
+#################################
+da (Danish)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m2.058s
+user	0m1.993s
+sys	0m0.065s
+True positives: 4911
+False positives: 644
+False negatives: 601
+Precision: 0.884
+Recall: 0.891
+F-measure: 0.888
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.560s
+user	0m1.500s
+sys	0m0.061s
+True positives: 5512
+False positives: 645
+False negatives: 0
+Precision: 0.895
+Recall: 1.000
+F-measure: 0.945
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.613s
+user	0m1.548s
+sys	0m0.065s
+True positives: 5028
+False positives: 644
+False negatives: 484
+Precision: 0.886
+Recall: 0.912
+F-measure: 0.899

@@ -1,0 +1,47 @@
+#################################
+it (Italian)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: it
+
+real	0m19.597s
+user	0m19.557s
+sys	0m0.040s
+True positives: 12333
+False positives: 397
+False negatives: 1551
+Precision: 0.969
+Recall: 0.888
+F-measure: 0.927
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: it
+
+real	0m19.707s
+user	0m19.675s
+sys	0m0.032s
+True positives: 12333
+False positives: 397
+False negatives: 1551
+Precision: 0.969
+Recall: 0.888
+F-measure: 0.927
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: it
+
+real	0m19.490s
+user	0m19.474s
+sys	0m0.016s
+True positives: 12333
+False positives: 397
+False negatives: 1551
+Precision: 0.969
+Recall: 0.888
+F-measure: 0.927
+=============================

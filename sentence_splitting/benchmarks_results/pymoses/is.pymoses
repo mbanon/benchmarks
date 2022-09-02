@@ -1,0 +1,38 @@
+#################################
+is (Icelandic)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	9m56.325s
+user	9m56.235s
+sys	0m0.088s
+True positives: 48966
+False positives: 3300
+False negatives: 2991
+Precision: 0.937
+Recall: 0.942
+F-measure: 0.940
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m6.982s
+user	0m6.958s
+sys	0m0.024s
+True positives: 51957
+False positives: 2321
+False negatives: 0
+Precision: 0.957
+Recall: 1.000
+F-measure: 0.978
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m6.496s
+user	0m6.488s
+sys	0m0.008s
+True positives: 49473
+False positives: 3128
+False negatives: 2484
+Precision: 0.941
+Recall: 0.952
+F-measure: 0.946

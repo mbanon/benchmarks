@@ -1,0 +1,41 @@
+#################################
+cs (Czech)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	1m1.227s
+user	0m56.011s
+sys	0m5.216s
+True positives: 59359
+False positives: 304
+False negatives: 28554
+Precision: 0.995
+Recall: 0.675
+F-measure: 0.804
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m16.214s
+user	0m16.114s
+sys	0m0.101s
+True positives: 87913
+False positives: 263
+False negatives: 0
+Precision: 0.997
+Recall: 1.000
+F-measure: 0.999
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m15.213s
+user	0m15.092s
+sys	0m0.121s
+True positives: 64485
+False positives: 298
+False negatives: 23428
+Precision: 0.995
+Recall: 0.734
+F-measure: 0.845
+=============================

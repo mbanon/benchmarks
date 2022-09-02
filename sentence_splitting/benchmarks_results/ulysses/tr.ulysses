@@ -1,0 +1,41 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.842s
+user	0m1.770s
+sys	0m0.072s
+True positives: 8666
+False positives: 207
+False negatives: 3975
+Precision: 0.977
+Recall: 0.686
+F-measure: 0.806
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.658s
+user	0m1.634s
+sys	0m0.025s
+True positives: 12641
+False positives: 178
+False negatives: 0
+Precision: 0.986
+Recall: 1.000
+F-measure: 0.993
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.496s
+user	0m1.483s
+sys	0m0.013s
+True positives: 9386
+False positives: 205
+False negatives: 3255
+Precision: 0.979
+Recall: 0.743
+F-measure: 0.844
+=============================

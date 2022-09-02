@@ -1,0 +1,38 @@
+#################################
+cnr (Montenegrin)
+Gold standard: MESUBS
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m6.335s
+user	0m5.272s
+sys	0m1.064s
+True positives: 17239
+False positives: 5
+False negatives: 2761
+Precision: 1.000
+Recall: 0.862
+F-measure: 0.926
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.305s
+user	0m1.293s
+sys	0m0.012s
+True positives: 20000
+False positives: 5
+False negatives: 0
+Precision: 1.000
+Recall: 1.000
+F-measure: 1.000
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.844s
+user	0m0.835s
+sys	0m0.009s
+True positives: 17733
+False positives: 5
+False negatives: 2267
+Precision: 1.000
+Recall: 0.887
+F-measure: 0.940

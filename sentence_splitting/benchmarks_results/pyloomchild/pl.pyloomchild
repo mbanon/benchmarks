@@ -1,0 +1,46 @@
+#################################
+pl (Polish)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.094s
+user	0m2.700s
+sys	0m0.108s
+True positives: 8200
+False positives: 14
+False negatives: 27
+Precision: 0.998
+Recall: 0.997
+F-measure: 0.998
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.943s
+user	0m3.067s
+sys	0m0.209s
+True positives: 8227
+False positives: 14
+False negatives: 0
+Precision: 0.998
+Recall: 1.000
+F-measure: 0.999
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/loomchild_segmenter.py", line 23, in <module>
+    sents = segmenter.get_segmentation(i)
+  File "/home/mbanon/.local/lib/python3.10/site-packages/loomchild/segmenter.py", line 69, in get_segmentation
+    sentence_segments = json.loads(self(sentence))
+  File "/usr/lib/python3.10/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+
+real	0m1.013s
+user	0m2.842s
+sys	0m0.116s
+True positives: 8204
+False positives: 14
+False negatives: 23
+Precision: 0.998
+Recall: 0.997
+F-measure: 0.998

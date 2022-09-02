@@ -1,0 +1,47 @@
+#################################
+sl (Slovenian)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: sl
+
+real	0m3.815s
+user	0m3.811s
+sys	0m0.004s
+True positives: 1
+False positives: 38
+False negatives: 7999
+Precision: 0.026
+Recall: 0.000
+F-measure: 0.000
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: sl
+
+real	0m3.810s
+user	0m3.802s
+sys	0m0.008s
+True positives: 1
+False positives: 38
+False negatives: 7999
+Precision: 0.026
+Recall: 0.000
+F-measure: 0.000
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: sl
+
+real	0m3.878s
+user	0m3.870s
+sys	0m0.008s
+True positives: 1
+False positives: 38
+False negatives: 7999
+Precision: 0.026
+Recall: 0.000
+F-measure: 0.000
+=============================

@@ -1,0 +1,41 @@
+#################################
+sq (Albanian)
+Gold standard: SETIMES
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m3.194s
+user	0m3.062s
+sys	0m0.132s
+True positives: 5987
+False positives: 218
+False negatives: 4013
+Precision: 0.965
+Recall: 0.599
+F-measure: 0.739
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m3.126s
+user	0m3.102s
+sys	0m0.024s
+True positives: 10000
+False positives: 218
+False negatives: 0
+Precision: 0.979
+Recall: 1.000
+F-measure: 0.989
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m2.637s
+user	0m2.609s
+sys	0m0.028s
+True positives: 6723
+False positives: 218
+False negatives: 3277
+Precision: 0.969
+Recall: 0.672
+F-measure: 0.794
+=============================

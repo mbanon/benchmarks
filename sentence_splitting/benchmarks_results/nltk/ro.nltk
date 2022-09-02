@@ -1,0 +1,41 @@
+#################################
+ro (Romanian)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.983s
+user	0m1.955s
+sys	0m0.028s
+True positives: 9226
+False positives: 648
+False negatives: 298
+Precision: 0.934
+Recall: 0.969
+F-measure: 0.951
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.892s
+user	0m2.524s
+sys	0m0.368s
+True positives: 9524
+False positives: 605
+False negatives: 0
+Precision: 0.940
+Recall: 1.000
+F-measure: 0.969
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.856s
+user	0m0.792s
+sys	0m0.064s
+True positives: 9280
+False positives: 640
+False negatives: 244
+Precision: 0.935
+Recall: 0.974
+F-measure: 0.955
+=============================

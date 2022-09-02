@@ -1,0 +1,38 @@
+#################################
+uk (Ukrainian)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.168s
+user	0m2.787s
+sys	0m0.106s
+True positives: 5612
+False positives: 43
+False negatives: 254
+Precision: 0.992
+Recall: 0.957
+F-measure: 0.974
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.918s
+user	0m2.966s
+sys	0m0.145s
+True positives: 5866
+False positives: 43
+False negatives: 0
+Precision: 0.993
+Recall: 1.000
+F-measure: 0.996
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.092s
+user	0m2.788s
+sys	0m0.080s
+True positives: 5656
+False positives: 43
+False negatives: 210
+Precision: 0.992
+Recall: 0.964
+F-measure: 0.978

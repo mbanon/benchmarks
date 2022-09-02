@@ -1,0 +1,38 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.835s
+user	0m0.532s
+sys	0m0.304s
+True positives: 1843
+False positives: 160
+False negatives: 231
+Precision: 0.920
+Recall: 0.889
+F-measure: 0.904
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.285s
+user	0m0.285s
+sys	0m0.000s
+True positives: 2074
+False positives: 109
+False negatives: 0
+Precision: 0.950
+Recall: 1.000
+F-measure: 0.974
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.240s
+user	0m0.232s
+sys	0m0.008s
+True positives: 1884
+False positives: 151
+False negatives: 190
+Precision: 0.926
+Recall: 0.908
+F-measure: 0.917

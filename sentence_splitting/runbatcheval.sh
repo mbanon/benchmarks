@@ -47,7 +47,7 @@ case $LC in
 		;;			
  	es)
 		LN=Spanish
-		RULES=PTDR
+		RULES=OmegaT
 		;;
 	et)
 		LN=Estonian
@@ -67,7 +67,7 @@ case $LC in
 		;;
 	hu)
 		LN=Hungarian
-		RULES=PTDR
+		RULES=OmegaT
 		;;
 	is)
 		LN=Icelandic
@@ -129,7 +129,7 @@ case $LC in
 	sq)
 		LN=Albanian
 		PREFIX=SETIMES
-		RULES=PTDR
+		RULES=OmegaT
 		;;
 	sr)
 		LN=Serbian
@@ -139,7 +139,7 @@ case $LC in
 		LN=Swedish
 		RULES=OmegaT
 		;;
-	tk)
+	tr)
 		LN=Turkish
 		RULES=NonAggressive
 		;;

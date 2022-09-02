@@ -1,0 +1,38 @@
+#################################
+sv (Swedish)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.943s
+user	0m1.570s
+sys	0m0.373s
+True positives: 5401
+False positives: 65
+False negatives: 625
+Precision: 0.988
+Recall: 0.896
+F-measure: 0.940
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.691s
+user	0m0.679s
+sys	0m0.012s
+True positives: 6026
+False positives: 65
+False negatives: 0
+Precision: 0.989
+Recall: 1.000
+F-measure: 0.995
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.560s
+user	0m0.552s
+sys	0m0.008s
+True positives: 5498
+False positives: 65
+False negatives: 528
+Precision: 0.988
+Recall: 0.912
+F-measure: 0.949

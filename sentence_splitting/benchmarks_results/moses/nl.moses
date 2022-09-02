@@ -1,0 +1,47 @@
+#################################
+nl (Dutch)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: nl
+
+real	0m9.909s
+user	0m9.892s
+sys	0m0.016s
+True positives: 10705
+False positives: 346
+False negatives: 2878
+Precision: 0.969
+Recall: 0.788
+F-measure: 0.869
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: nl
+
+real	0m10.021s
+user	0m10.016s
+sys	0m0.004s
+True positives: 10705
+False positives: 346
+False negatives: 2878
+Precision: 0.969
+Recall: 0.788
+F-measure: 0.869
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: nl
+
+real	0m10.073s
+user	0m10.053s
+sys	0m0.020s
+True positives: 10705
+False positives: 346
+False negatives: 2878
+Precision: 0.969
+Recall: 0.788
+F-measure: 0.869
+=============================

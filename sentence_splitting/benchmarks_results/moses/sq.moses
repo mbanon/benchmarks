@@ -1,0 +1,50 @@
+#################################
+sq (Albanian)
+Gold standard: SETIMES
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: sq
+WARNING: No known abbreviations for language 'sq', attempting fall-back to English version...
+
+real	0m18.786s
+user	0m18.767s
+sys	0m0.016s
+True positives: 8780
+False positives: 565
+False negatives: 1220
+Precision: 0.940
+Recall: 0.878
+F-measure: 0.908
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: sq
+WARNING: No known abbreviations for language 'sq', attempting fall-back to English version...
+
+real	0m18.785s
+user	0m18.753s
+sys	0m0.033s
+True positives: 8780
+False positives: 565
+False negatives: 1220
+Precision: 0.940
+Recall: 0.878
+F-measure: 0.908
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: sq
+WARNING: No known abbreviations for language 'sq', attempting fall-back to English version...
+
+real	0m18.678s
+user	0m18.653s
+sys	0m0.025s
+True positives: 8780
+False positives: 565
+False negatives: 1220
+Precision: 0.940
+Recall: 0.878
+F-measure: 0.908
+=============================

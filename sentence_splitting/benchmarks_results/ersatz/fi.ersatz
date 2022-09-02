@@ -1,0 +1,41 @@
+#################################
+fi (Finnish)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.054s
+user	0m0.043s
+sys	0m0.012s
+True positives: 13302
+False positives: 1696
+False negatives: 1834
+Precision: 0.887
+Recall: 0.879
+F-measure: 0.883
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.064s
+user	0m0.054s
+sys	0m0.014s
+True positives: 15136
+False positives: 14997
+False negatives: 0
+Precision: 0.502
+Recall: 1.000
+F-measure: 0.669
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.055s
+user	0m0.044s
+sys	0m0.013s
+True positives: 13638
+False positives: 4112
+False negatives: 1498
+Precision: 0.768
+Recall: 0.901
+F-measure: 0.829
+=============================

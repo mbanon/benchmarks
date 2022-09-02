@@ -1,0 +1,44 @@
+#################################
+sq (Albanian)
+Gold standard: SETIMES
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.471s
+user	0m1.181s
+sys	0m0.065s
+True positives: 8499
+False positives: 569
+False negatives: 1501
+Precision: 0.937
+Recall: 0.850
+F-measure: 0.891
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.526s
+user	0m1.372s
+sys	0m0.045s
+True positives: 10000
+False positives: 569
+False negatives: 0
+Precision: 0.946
+Recall: 1.000
+F-measure: 0.972
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.472s
+user	0m1.257s
+sys	0m0.039s
+True positives: 8792
+False positives: 569
+False negatives: 1208
+Precision: 0.939
+Recall: 0.879
+F-measure: 0.908
+=============================

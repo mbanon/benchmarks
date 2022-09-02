@@ -1,0 +1,50 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: tr
+WARNING: No known abbreviations for language 'tr', attempting fall-back to English version...
+
+real	0m4.379s
+user	0m4.360s
+sys	0m0.020s
+True positives: 10492
+False positives: 409
+False negatives: 2149
+Precision: 0.962
+Recall: 0.830
+F-measure: 0.891
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: tr
+WARNING: No known abbreviations for language 'tr', attempting fall-back to English version...
+
+real	0m4.466s
+user	0m4.458s
+sys	0m0.008s
+True positives: 10492
+False positives: 409
+False negatives: 2149
+Precision: 0.962
+Recall: 0.830
+F-measure: 0.891
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: tr
+WARNING: No known abbreviations for language 'tr', attempting fall-back to English version...
+
+real	0m4.338s
+user	0m4.331s
+sys	0m0.008s
+True positives: 10492
+False positives: 409
+False negatives: 2149
+Precision: 0.962
+Recall: 0.830
+F-measure: 0.891
+=============================

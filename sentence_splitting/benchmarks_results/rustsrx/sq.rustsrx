@@ -1,0 +1,38 @@
+#################################
+sq (Albanian)
+Gold standard: SETIMES
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m4.912s
+user	0m4.849s
+sys	0m0.064s
+True positives: 8783
+False positives: 649
+False negatives: 1217
+Precision: 0.931
+Recall: 0.878
+F-measure: 0.904
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m3.884s
+user	0m3.812s
+sys	0m0.072s
+True positives: 10000
+False positives: 649
+False negatives: 0
+Precision: 0.939
+Recall: 1.000
+F-measure: 0.969
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m3.830s
+user	0m3.763s
+sys	0m0.068s
+True positives: 9018
+False positives: 649
+False negatives: 982
+Precision: 0.933
+Recall: 0.902
+F-measure: 0.917

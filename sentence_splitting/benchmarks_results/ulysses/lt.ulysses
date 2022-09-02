@@ -1,0 +1,41 @@
+#################################
+lt (Lithuanian)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.069s
+user	0m0.061s
+sys	0m0.008s
+True positives: 185
+False positives: 0
+False negatives: 78
+Precision: 1.000
+Recall: 0.703
+F-measure: 0.826
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.078s
+user	0m0.077s
+sys	0m0.001s
+True positives: 263
+False positives: 0
+False negatives: 0
+Precision: 1.000
+Recall: 1.000
+F-measure: 1.000
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.078s
+user	0m0.078s
+sys	0m0.001s
+True positives: 197
+False positives: 0
+False negatives: 66
+Precision: 1.000
+Recall: 0.749
+F-measure: 0.857
+=============================

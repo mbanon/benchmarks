@@ -1,0 +1,41 @@
+#################################
+sv (Swedish)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.355s
+user	0m0.338s
+sys	0m0.016s
+True positives: 5466
+False positives: 120
+False negatives: 560
+Precision: 0.979
+Recall: 0.907
+F-measure: 0.941
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.262s
+user	0m0.253s
+sys	0m0.009s
+True positives: 6026
+False positives: 122
+False negatives: 0
+Precision: 0.980
+Recall: 1.000
+F-measure: 0.990
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.272s
+user	0m0.243s
+sys	0m0.029s
+True positives: 5553
+False positives: 120
+False negatives: 473
+Precision: 0.979
+Recall: 0.922
+F-measure: 0.949
+=============================

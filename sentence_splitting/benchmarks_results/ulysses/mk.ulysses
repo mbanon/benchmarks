@@ -1,0 +1,41 @@
+#################################
+mk (Macedonian)
+Gold standard: SETIMES
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m10.778s
+user	0m10.188s
+sys	0m0.588s
+True positives: 11551
+False positives: 635
+False negatives: 8449
+Precision: 0.948
+Recall: 0.578
+F-measure: 0.718
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m5.009s
+user	0m4.964s
+sys	0m0.045s
+True positives: 20000
+False positives: 635
+False negatives: 0
+Precision: 0.969
+Recall: 1.000
+F-measure: 0.984
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m4.687s
+user	0m4.637s
+sys	0m0.049s
+True positives: 13074
+False positives: 635
+False negatives: 6926
+Precision: 0.954
+Recall: 0.654
+F-measure: 0.776
+=============================

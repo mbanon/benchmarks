@@ -1,0 +1,41 @@
+#################################
+cnr (Montenegrin)
+Gold standard: MESUBS
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.777s
+user	0m1.749s
+sys	0m0.028s
+True positives: 18622
+False positives: 21
+False negatives: 1378
+Precision: 0.999
+Recall: 0.931
+F-measure: 0.964
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m5.640s
+user	0m4.920s
+sys	0m0.720s
+True positives: 19999
+False positives: 67
+False negatives: 1
+Precision: 0.997
+Recall: 1.000
+F-measure: 0.998
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.530s
+user	0m1.374s
+sys	0m0.156s
+True positives: 18881
+False positives: 28
+False negatives: 1119
+Precision: 0.999
+Recall: 0.944
+F-measure: 0.971
+=============================

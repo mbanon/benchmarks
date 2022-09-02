@@ -1,0 +1,41 @@
+#################################
+bg (Bulgarian)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m2.110s
+user	0m2.022s
+sys	0m0.088s
+True positives: 6653
+False positives: 8
+False negatives: 4485
+Precision: 0.999
+Recall: 0.597
+F-measure: 0.748
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.755s
+user	0m1.719s
+sys	0m0.037s
+True positives: 11138
+False positives: 8
+False negatives: 0
+Precision: 0.999
+Recall: 1.000
+F-measure: 1.000
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.609s
+user	0m1.600s
+sys	0m0.009s
+True positives: 7475
+False positives: 8
+False negatives: 3663
+Precision: 0.999
+Recall: 0.671
+F-measure: 0.803
+=============================

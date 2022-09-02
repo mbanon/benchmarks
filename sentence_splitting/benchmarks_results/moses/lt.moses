@@ -1,0 +1,47 @@
+#################################
+lt (Lithuanian)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: lt
+
+real	0m0.035s
+user	0m0.027s
+sys	0m0.008s
+True positives: 248
+False positives: 1
+False negatives: 15
+Precision: 0.996
+Recall: 0.943
+F-measure: 0.969
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: lt
+
+real	0m0.034s
+user	0m0.034s
+sys	0m0.000s
+True positives: 248
+False positives: 1
+False negatives: 15
+Precision: 0.996
+Recall: 0.943
+F-measure: 0.969
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: lt
+
+real	0m0.034s
+user	0m0.030s
+sys	0m0.004s
+True positives: 248
+False positives: 1
+False negatives: 15
+Precision: 0.996
+Recall: 0.943
+F-measure: 0.969
+=============================

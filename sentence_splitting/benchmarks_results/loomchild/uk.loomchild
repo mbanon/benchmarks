@@ -1,0 +1,44 @@
+#################################
+uk (Ukrainian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  rust
+
+real	0m3.320s
+user	0m4.760s
+sys	0m0.101s
+True positives: 5628
+False positives: 39
+False negatives: 238
+Precision: 0.993
+Recall: 0.959
+F-measure: 0.976
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  rust
+
+real	0m3.191s
+user	0m4.639s
+sys	0m0.088s
+True positives: 5866
+False positives: 42
+False negatives: 0
+Precision: 0.993
+Recall: 1.000
+F-measure: 0.996
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  rust
+
+real	0m3.223s
+user	0m4.729s
+sys	0m0.120s
+True positives: 5669
+False positives: 41
+False negatives: 197
+Precision: 0.993
+Recall: 0.966
+F-measure: 0.979
+=============================

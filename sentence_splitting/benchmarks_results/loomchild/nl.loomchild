@@ -1,0 +1,44 @@
+#################################
+nl (Dutch)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  rust
+
+real	0m1.088s
+user	0m2.455s
+sys	0m0.068s
+True positives: 10940
+False positives: 273
+False negatives: 2643
+Precision: 0.976
+Recall: 0.805
+F-measure: 0.882
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  rust
+
+real	0m1.137s
+user	0m2.733s
+sys	0m0.076s
+True positives: 13583
+False positives: 273
+False negatives: 0
+Precision: 0.980
+Recall: 1.000
+F-measure: 0.990
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  rust
+
+real	0m1.111s
+user	0m2.661s
+sys	0m0.075s
+True positives: 11422
+False positives: 273
+False negatives: 2161
+Precision: 0.977
+Recall: 0.841
+F-measure: 0.904
+=============================

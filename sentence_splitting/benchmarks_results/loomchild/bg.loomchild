@@ -1,0 +1,44 @@
+#################################
+bg (Bulgarian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.493s
+user	0m1.228s
+sys	0m0.051s
+True positives: 9870
+False positives: 190
+False negatives: 1268
+Precision: 0.981
+Recall: 0.886
+F-measure: 0.931
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.463s
+user	0m1.220s
+sys	0m0.073s
+True positives: 11138
+False positives: 190
+False negatives: 0
+Precision: 0.983
+Recall: 1.000
+F-measure: 0.992
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.527s
+user	0m1.315s
+sys	0m0.069s
+True positives: 10111
+False positives: 190
+False negatives: 1027
+Precision: 0.982
+Recall: 0.908
+F-measure: 0.943
+=============================

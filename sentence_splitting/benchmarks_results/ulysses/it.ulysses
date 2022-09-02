@@ -1,0 +1,41 @@
+#################################
+it (Italian)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m3.230s
+user	0m3.090s
+sys	0m0.140s
+True positives: 9456
+False positives: 32
+False negatives: 4428
+Precision: 0.997
+Recall: 0.681
+F-measure: 0.809
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.768s
+user	0m2.739s
+sys	0m0.029s
+True positives: 13884
+False positives: 9
+False negatives: 0
+Precision: 0.999
+Recall: 1.000
+F-measure: 1.000
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m2.561s
+user	0m2.521s
+sys	0m0.041s
+True positives: 10288
+False positives: 27
+False negatives: 3596
+Precision: 0.997
+Recall: 0.741
+F-measure: 0.850
+=============================

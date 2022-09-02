@@ -1,0 +1,38 @@
+#################################
+mk (Macedonian)
+Gold standard: SETIMES
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m11.345s
+user	0m11.257s
+sys	0m0.088s
+True positives: 17127
+False positives: 1914
+False negatives: 2873
+Precision: 0.899
+Recall: 0.856
+F-measure: 0.877
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m9.370s
+user	0m9.278s
+sys	0m0.092s
+True positives: 20000
+False positives: 1914
+False negatives: 0
+Precision: 0.913
+Recall: 1.000
+F-measure: 0.954
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m9.010s
+user	0m8.898s
+sys	0m0.113s
+True positives: 17642
+False positives: 1914
+False negatives: 2358
+Precision: 0.902
+Recall: 0.882
+F-measure: 0.892

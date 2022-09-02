@@ -1,0 +1,38 @@
+#################################
+pt (Portuguese)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m8.928s
+user	0m7.452s
+sys	0m1.476s
+True positives: 8036
+False positives: 24
+False negatives: 1332
+Precision: 0.997
+Recall: 0.858
+F-measure: 0.922
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.283s
+user	0m1.274s
+sys	0m0.009s
+True positives: 9368
+False positives: 24
+False negatives: 0
+Precision: 0.997
+Recall: 1.000
+F-measure: 0.999
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.077s
+user	0m1.076s
+sys	0m0.001s
+True positives: 8291
+False positives: 24
+False negatives: 1077
+Precision: 0.997
+Recall: 0.885
+F-measure: 0.938

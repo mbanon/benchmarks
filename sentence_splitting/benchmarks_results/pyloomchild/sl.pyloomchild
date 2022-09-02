@@ -1,0 +1,38 @@
+#################################
+sl (Slovenian)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.547s
+user	0m1.428s
+sys	0m0.089s
+True positives: 7716
+False positives: 119
+False negatives: 284
+Precision: 0.985
+Recall: 0.965
+F-measure: 0.975
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.794s
+user	0m2.461s
+sys	0m0.151s
+True positives: 8000
+False positives: 119
+False negatives: 0
+Precision: 0.985
+Recall: 1.000
+F-measure: 0.993
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.631s
+user	0m1.833s
+sys	0m0.096s
+True positives: 7755
+False positives: 119
+False negatives: 245
+Precision: 0.985
+Recall: 0.969
+F-measure: 0.977

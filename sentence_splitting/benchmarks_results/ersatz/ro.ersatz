@@ -1,0 +1,41 @@
+#################################
+ro (Romanian)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.047s
+user	0m0.040s
+sys	0m0.008s
+True positives: 9314
+False positives: 1410
+False negatives: 210
+Precision: 0.869
+Recall: 0.978
+F-measure: 0.920
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.058s
+user	0m0.061s
+sys	0m0.000s
+True positives: 9524
+False positives: 10723
+False negatives: 0
+Precision: 0.470
+Recall: 1.000
+F-measure: 0.640
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.050s
+user	0m0.049s
+sys	0m0.004s
+True positives: 9354
+False positives: 3100
+False negatives: 170
+Precision: 0.751
+Recall: 0.982
+F-measure: 0.851
+=============================

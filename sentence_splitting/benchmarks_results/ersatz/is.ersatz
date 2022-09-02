@@ -1,0 +1,41 @@
+#################################
+is (Icelandic)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.136s
+user	0m0.129s
+sys	0m0.013s
+True positives: 47914
+False positives: 8788
+False negatives: 4043
+Precision: 0.845
+Recall: 0.922
+F-measure: 0.882
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.190s
+user	0m0.174s
+sys	0m0.024s
+True positives: 51957
+False positives: 56701
+False negatives: 0
+Precision: 0.478
+Recall: 1.000
+F-measure: 0.647
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.141s
+user	0m0.121s
+sys	0m0.027s
+True positives: 48628
+False positives: 17550
+False negatives: 3329
+Precision: 0.735
+Recall: 0.936
+F-measure: 0.823
+=============================

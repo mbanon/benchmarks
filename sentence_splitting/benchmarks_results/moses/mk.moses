@@ -1,0 +1,50 @@
+#################################
+mk (Macedonian)
+Gold standard: SETIMES
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: mk
+WARNING: No known abbreviations for language 'mk', attempting fall-back to English version...
+
+real	2m50.267s
+user	2m50.209s
+sys	0m0.060s
+True positives: 15775
+False positives: 938
+False negatives: 4225
+Precision: 0.944
+Recall: 0.789
+F-measure: 0.859
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: mk
+WARNING: No known abbreviations for language 'mk', attempting fall-back to English version...
+
+real	2m46.515s
+user	2m46.488s
+sys	0m0.028s
+True positives: 15775
+False positives: 938
+False negatives: 4225
+Precision: 0.944
+Recall: 0.789
+F-measure: 0.859
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: mk
+WARNING: No known abbreviations for language 'mk', attempting fall-back to English version...
+
+real	2m48.927s
+user	2m48.864s
+sys	0m0.056s
+True positives: 15775
+False positives: 938
+False negatives: 4225
+Precision: 0.944
+Recall: 0.789
+F-measure: 0.859
+=============================

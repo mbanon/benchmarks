@@ -89,6 +89,9 @@ for the requested language (based on the benchmark results located in
 
 ### Results
 
-Coming soon...
+Individual results for each test are available in `/benchmarks_results/$TOOL/$LANGCODE.$TOOL`
 
-Deprecated: https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=0
+A summary for the `mixed` testset is available in this spreadsheet: https://docs.google.com/spreadsheets/d/1mGJ9MSyMlsK0EUDRC2J50uxApiti3ggnlrzAWn8rkMg/edit#gid=236192053
+
+
+

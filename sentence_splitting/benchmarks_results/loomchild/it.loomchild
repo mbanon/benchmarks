@@ -1,0 +1,44 @@
+#################################
+it (Italian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.483s
+user	0m1.308s
+sys	0m0.029s
+True positives: 13723
+False positives: 864
+False negatives: 161
+Precision: 0.941
+Recall: 0.988
+F-measure: 0.964
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.497s
+user	0m1.308s
+sys	0m0.070s
+True positives: 13884
+False positives: 864
+False negatives: 0
+Precision: 0.941
+Recall: 1.000
+F-measure: 0.970
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.503s
+user	0m1.329s
+sys	0m0.081s
+True positives: 13755
+False positives: 864
+False negatives: 129
+Precision: 0.941
+Recall: 0.991
+F-measure: 0.965
+=============================

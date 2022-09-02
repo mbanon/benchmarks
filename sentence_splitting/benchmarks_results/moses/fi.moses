@@ -1,0 +1,47 @@
+#################################
+fi (Finnish)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: fi
+
+real	0m14.865s
+user	0m14.849s
+sys	0m0.016s
+True positives: 12588
+False positives: 284
+False negatives: 2548
+Precision: 0.978
+Recall: 0.832
+F-measure: 0.899
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: fi
+
+real	0m14.929s
+user	0m14.897s
+sys	0m0.033s
+True positives: 12588
+False positives: 284
+False negatives: 2548
+Precision: 0.978
+Recall: 0.832
+F-measure: 0.899
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: fi
+
+real	0m14.859s
+user	0m14.846s
+sys	0m0.013s
+True positives: 12588
+False positives: 284
+False negatives: 2548
+Precision: 0.978
+Recall: 0.832
+F-measure: 0.899
+=============================

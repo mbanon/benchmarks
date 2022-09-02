@@ -1,0 +1,44 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.476s
+user	0m1.182s
+sys	0m0.069s
+True positives: 11162
+False positives: 909
+False negatives: 1479
+Precision: 0.925
+Recall: 0.883
+F-measure: 0.903
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.486s
+user	0m1.256s
+sys	0m0.053s
+True positives: 12641
+False positives: 909
+False negatives: 0
+Precision: 0.933
+Recall: 1.000
+F-measure: 0.965
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.477s
+user	0m1.184s
+sys	0m0.084s
+True positives: 11408
+False positives: 909
+False negatives: 1233
+Precision: 0.926
+Recall: 0.902
+F-measure: 0.914
+=============================

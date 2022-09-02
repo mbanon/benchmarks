@@ -1,0 +1,50 @@
+#################################
+da (Danish)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: da
+WARNING: No known abbreviations for language 'da', attempting fall-back to English version...
+
+real	0m1.385s
+user	0m1.381s
+sys	0m0.004s
+True positives: 4508
+False positives: 447
+False negatives: 1004
+Precision: 0.910
+Recall: 0.818
+F-measure: 0.861
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: da
+WARNING: No known abbreviations for language 'da', attempting fall-back to English version...
+
+real	0m1.421s
+user	0m1.413s
+sys	0m0.008s
+True positives: 4508
+False positives: 447
+False negatives: 1004
+Precision: 0.910
+Recall: 0.818
+F-measure: 0.861
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: da
+WARNING: No known abbreviations for language 'da', attempting fall-back to English version...
+
+real	0m1.380s
+user	0m1.372s
+sys	0m0.009s
+True positives: 4508
+False positives: 447
+False negatives: 1004
+Precision: 0.910
+Recall: 0.818
+F-measure: 0.861
+=============================

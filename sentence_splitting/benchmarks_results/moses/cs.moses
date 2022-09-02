@@ -1,0 +1,47 @@
+#################################
+cs (Czech)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: cs
+
+real	19m31.132s
+user	19m30.991s
+sys	0m0.144s
+True positives: 71825
+False positives: 3887
+False negatives: 16088
+Precision: 0.949
+Recall: 0.817
+F-measure: 0.878
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: cs
+
+real	18m52.447s
+user	18m52.134s
+sys	0m0.128s
+True positives: 71825
+False positives: 3887
+False negatives: 16088
+Precision: 0.949
+Recall: 0.817
+F-measure: 0.878
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: cs
+
+real	18m51.720s
+user	18m51.648s
+sys	0m0.077s
+True positives: 71825
+False positives: 3887
+False negatives: 16088
+Precision: 0.949
+Recall: 0.817
+F-measure: 0.878
+=============================

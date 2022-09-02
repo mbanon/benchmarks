@@ -1,0 +1,47 @@
+#################################
+is (Icelandic)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: is
+
+real	8m45.735s
+user	8m45.653s
+sys	0m0.084s
+True positives: 48984
+False positives: 3300
+False negatives: 2973
+Precision: 0.937
+Recall: 0.943
+F-measure: 0.940
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: is
+
+real	8m45.103s
+user	8m45.020s
+sys	0m0.081s
+True positives: 48984
+False positives: 3300
+False negatives: 2973
+Precision: 0.937
+Recall: 0.943
+F-measure: 0.940
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: is
+
+real	8m47.555s
+user	8m47.490s
+sys	0m0.069s
+True positives: 48984
+False positives: 3300
+False negatives: 2973
+Precision: 0.937
+Recall: 0.943
+F-measure: 0.940
+=============================

@@ -1,0 +1,44 @@
+#################################
+nn (Norwegian-Nynorsk)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.499s
+user	0m1.252s
+sys	0m0.085s
+True positives: 15715
+False positives: 885
+False negatives: 1860
+Precision: 0.947
+Recall: 0.894
+F-measure: 0.920
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.495s
+user	0m1.291s
+sys	0m0.096s
+True positives: 17575
+False positives: 885
+False negatives: 0
+Precision: 0.952
+Recall: 1.000
+F-measure: 0.975
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.484s
+user	0m1.249s
+sys	0m0.086s
+True positives: 16073
+False positives: 885
+False negatives: 1502
+Precision: 0.948
+Recall: 0.915
+F-measure: 0.931
+=============================

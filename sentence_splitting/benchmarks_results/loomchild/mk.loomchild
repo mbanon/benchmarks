@@ -1,0 +1,44 @@
+#################################
+mk (Macedonian)
+Gold standard: SETIMES
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.600s
+user	0m1.726s
+sys	0m0.065s
+True positives: 17062
+False positives: 1708
+False negatives: 2938
+Precision: 0.909
+Recall: 0.853
+F-measure: 0.880
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.598s
+user	0m1.640s
+sys	0m0.085s
+True positives: 20000
+False positives: 1708
+False negatives: 0
+Precision: 0.921
+Recall: 1.000
+F-measure: 0.959
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.601s
+user	0m1.714s
+sys	0m0.102s
+True positives: 17587
+False positives: 1708
+False negatives: 2413
+Precision: 0.911
+Recall: 0.879
+F-measure: 0.895
+=============================

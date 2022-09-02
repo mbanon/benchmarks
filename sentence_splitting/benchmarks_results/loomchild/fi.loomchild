@@ -1,0 +1,44 @@
+#################################
+fi (Finnish)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  PTDR
+
+real	0m0.522s
+user	0m1.289s
+sys	0m0.074s
+True positives: 12906
+False positives: 263
+False negatives: 2230
+Precision: 0.980
+Recall: 0.853
+F-measure: 0.912
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  PTDR
+
+real	0m0.558s
+user	0m1.410s
+sys	0m0.057s
+True positives: 15136
+False positives: 263
+False negatives: 0
+Precision: 0.983
+Recall: 1.000
+F-measure: 0.991
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  PTDR
+
+real	0m0.522s
+user	0m1.382s
+sys	0m0.073s
+True positives: 13307
+False positives: 263
+False negatives: 1829
+Precision: 0.981
+Recall: 0.879
+F-measure: 0.927
+=============================

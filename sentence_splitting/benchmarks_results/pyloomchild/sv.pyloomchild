@@ -1,0 +1,38 @@
+#################################
+sv (Swedish)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.496s
+user	0m1.167s
+sys	0m0.127s
+True positives: 5386
+False positives: 71
+False negatives: 640
+Precision: 0.987
+Recall: 0.894
+F-measure: 0.938
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.735s
+user	0m2.132s
+sys	0m0.193s
+True positives: 6026
+False positives: 71
+False negatives: 0
+Precision: 0.988
+Recall: 1.000
+F-measure: 0.994
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.559s
+user	0m1.523s
+sys	0m0.082s
+True positives: 5490
+False positives: 71
+False negatives: 536
+Precision: 0.987
+Recall: 0.911
+F-measure: 0.948

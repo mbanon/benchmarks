@@ -1,0 +1,38 @@
+#################################
+nn (Norwegian-Nynorsk)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m5.559s
+user	0m5.464s
+sys	0m0.096s
+True positives: 15131
+False positives: 521
+False negatives: 2444
+Precision: 0.967
+Recall: 0.861
+F-measure: 0.911
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m4.042s
+user	0m3.982s
+sys	0m0.060s
+True positives: 17575
+False positives: 522
+False negatives: 0
+Precision: 0.971
+Recall: 1.000
+F-measure: 0.985
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m4.297s
+user	0m4.212s
+sys	0m0.084s
+True positives: 15601
+False positives: 522
+False negatives: 1974
+Precision: 0.968
+Recall: 0.888
+F-measure: 0.926

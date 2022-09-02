@@ -1,0 +1,38 @@
+#################################
+uk (Ukrainian)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m2.399s
+user	0m2.339s
+sys	0m0.060s
+True positives: 5680
+False positives: 184
+False negatives: 186
+Precision: 0.969
+Recall: 0.968
+F-measure: 0.968
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.083s
+user	0m2.022s
+sys	0m0.060s
+True positives: 5866
+False positives: 186
+False negatives: 0
+Precision: 0.969
+Recall: 1.000
+F-measure: 0.984
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.972s
+user	0m1.911s
+sys	0m0.061s
+True positives: 5713
+False positives: 184
+False negatives: 153
+Precision: 0.969
+Recall: 0.974
+F-measure: 0.971

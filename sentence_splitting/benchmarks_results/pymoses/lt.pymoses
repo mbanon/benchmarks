@@ -1,0 +1,38 @@
+#################################
+lt (Lithuanian)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.072s
+user	0m0.067s
+sys	0m0.004s
+True positives: 247
+False positives: 1
+False negatives: 16
+Precision: 0.996
+Recall: 0.939
+F-measure: 0.967
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.076s
+user	0m0.071s
+sys	0m0.004s
+True positives: 263
+False positives: 1
+False negatives: 0
+Precision: 0.996
+Recall: 1.000
+F-measure: 0.998
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.070s
+user	0m0.066s
+sys	0m0.005s
+True positives: 251
+False positives: 1
+False negatives: 12
+Precision: 0.996
+Recall: 0.954
+F-measure: 0.975

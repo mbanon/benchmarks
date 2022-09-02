@@ -1,0 +1,44 @@
+#################################
+sv (Swedish)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.424s
+user	0m1.008s
+sys	0m0.068s
+True positives: 5386
+False positives: 71
+False negatives: 640
+Precision: 0.987
+Recall: 0.894
+F-measure: 0.938
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.436s
+user	0m1.123s
+sys	0m0.049s
+True positives: 6026
+False positives: 71
+False negatives: 0
+Precision: 0.988
+Recall: 1.000
+F-measure: 0.994
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.448s
+user	0m1.167s
+sys	0m0.056s
+True positives: 5490
+False positives: 71
+False negatives: 536
+Precision: 0.987
+Recall: 0.911
+F-measure: 0.948
+=============================

@@ -1,0 +1,38 @@
+#################################
+nn (Norwegian-Nynorsk)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m38.143s
+user	0m35.411s
+sys	0m2.732s
+True positives: 13439
+False positives: 235
+False negatives: 4136
+Precision: 0.983
+Recall: 0.765
+F-measure: 0.860
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.002s
+user	0m1.990s
+sys	0m0.013s
+True positives: 17575
+False positives: 232
+False negatives: 0
+Precision: 0.987
+Recall: 1.000
+F-measure: 0.993
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.618s
+user	0m1.598s
+sys	0m0.021s
+True positives: 14211
+False positives: 235
+False negatives: 3364
+Precision: 0.984
+Recall: 0.809
+F-measure: 0.888

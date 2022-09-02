@@ -1,0 +1,41 @@
+#################################
+nl (Dutch)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m2.438s
+user	0m2.358s
+sys	0m0.080s
+True positives: 8494
+False positives: 106
+False negatives: 5089
+Precision: 0.988
+Recall: 0.625
+F-measure: 0.766
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.263s
+user	0m2.251s
+sys	0m0.012s
+True positives: 13583
+False positives: 100
+False negatives: 0
+Precision: 0.993
+Recall: 1.000
+F-measure: 0.996
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m2.099s
+user	0m2.079s
+sys	0m0.020s
+True positives: 9396
+False positives: 105
+False negatives: 4187
+Precision: 0.989
+Recall: 0.692
+F-measure: 0.814
+=============================

@@ -1,0 +1,41 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.228s
+user	0m0.216s
+sys	0m0.012s
+True positives: 1830
+False positives: 176
+False negatives: 244
+Precision: 0.912
+Recall: 0.882
+F-measure: 0.897
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.755s
+user	0m0.631s
+sys	0m0.124s
+True positives: 2074
+False positives: 125
+False negatives: 0
+Precision: 0.943
+Recall: 1.000
+F-measure: 0.971
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.325s
+user	0m0.285s
+sys	0m0.040s
+True positives: 1873
+False positives: 167
+False negatives: 201
+Precision: 0.918
+Recall: 0.903
+F-measure: 0.911
+=============================

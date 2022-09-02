@@ -1,0 +1,45 @@
+#################################
+pl (Polish)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: pl
+
+real	0m0.952s
+user	0m0.944s
+sys	0m0.008s
+True positives: 7371
+False positives: 22
+False negatives: 856
+Precision: 0.997
+Recall: 0.896
+F-measure: 0.944
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: pl
+
+real	0m0.987s
+user	0m0.983s
+sys	0m0.004s
+True positives: 7371
+False positives: 22
+False negatives: 856
+Precision: 0.997
+Recall: 0.896
+F-measure: 0.944
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: pl
+
+real	0m0.951s
+user	0m0.947s
+sys	0m0.004s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================

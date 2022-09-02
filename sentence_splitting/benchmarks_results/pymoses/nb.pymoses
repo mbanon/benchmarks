@@ -1,0 +1,38 @@
+#################################
+nb (Norwegian-Bokmaal)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m39.272s
+user	0m35.828s
+sys	0m3.444s
+True positives: 16362
+False positives: 66
+False negatives: 3683
+Precision: 0.996
+Recall: 0.816
+F-measure: 0.897
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.076s
+user	0m2.071s
+sys	0m0.005s
+True positives: 20045
+False positives: 61
+False negatives: 0
+Precision: 0.997
+Recall: 1.000
+F-measure: 0.998
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.688s
+user	0m1.679s
+sys	0m0.008s
+True positives: 17021
+False positives: 66
+False negatives: 3024
+Precision: 0.996
+Recall: 0.849
+F-measure: 0.917

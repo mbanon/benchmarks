@@ -1,0 +1,41 @@
+#################################
+el (Greek)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.036s
+user	0m0.028s
+sys	0m0.009s
+True positives: 2315
+False positives: 207
+False negatives: 206
+Precision: 0.918
+Recall: 0.918
+F-measure: 0.918
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.038s
+user	0m0.032s
+sys	0m0.008s
+True positives: 2521
+False positives: 2521
+False negatives: 0
+Precision: 0.500
+Recall: 1.000
+F-measure: 0.667
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.034s
+user	0m0.032s
+sys	0m0.004s
+True positives: 2356
+False positives: 622
+False negatives: 165
+Precision: 0.791
+Recall: 0.935
+F-measure: 0.857
+=============================

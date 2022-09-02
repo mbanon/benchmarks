@@ -1,0 +1,38 @@
+#################################
+sq (Albanian)
+Gold standard: SETIMES
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.584s
+user	0m1.535s
+sys	0m0.113s
+True positives: 8499
+False positives: 569
+False negatives: 1501
+Precision: 0.937
+Recall: 0.850
+F-measure: 0.891
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.867s
+user	0m2.758s
+sys	0m0.169s
+True positives: 10000
+False positives: 569
+False negatives: 0
+Precision: 0.946
+Recall: 1.000
+F-measure: 0.972
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.669s
+user	0m2.007s
+sys	0m0.087s
+True positives: 8792
+False positives: 569
+False negatives: 1208
+Precision: 0.939
+Recall: 0.879
+F-measure: 0.908

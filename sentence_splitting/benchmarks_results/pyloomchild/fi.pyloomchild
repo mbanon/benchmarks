@@ -1,0 +1,38 @@
+#################################
+fi (Finnish)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.618s
+user	0m1.675s
+sys	0m0.103s
+True positives: 12906
+False positives: 263
+False negatives: 2230
+Precision: 0.980
+Recall: 0.853
+F-measure: 0.912
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.069s
+user	0m3.387s
+sys	0m0.256s
+True positives: 15136
+False positives: 389
+False negatives: 0
+Precision: 0.975
+Recall: 1.000
+F-measure: 0.987
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.731s
+user	0m2.203s
+sys	0m0.141s
+True positives: 13307
+False positives: 286
+False negatives: 1829
+Precision: 0.979
+Recall: 0.879
+F-measure: 0.926

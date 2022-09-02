@@ -1,0 +1,41 @@
+#################################
+hu (Hungarian)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.030s
+user	0m0.020s
+sys	0m0.011s
+True positives: 1780
+False positives: 203
+False negatives: 20
+Precision: 0.898
+Recall: 0.989
+F-measure: 0.941
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.031s
+user	0m0.018s
+sys	0m0.015s
+True positives: 1800
+False positives: 1982
+False negatives: 0
+Precision: 0.476
+Recall: 1.000
+F-measure: 0.645
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.031s
+user	0m0.016s
+sys	0m0.017s
+True positives: 1785
+False positives: 520
+False negatives: 15
+Precision: 0.774
+Recall: 0.992
+F-measure: 0.870
+=============================

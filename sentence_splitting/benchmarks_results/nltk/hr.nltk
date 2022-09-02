@@ -1,0 +1,41 @@
+#################################
+hr (Croatian)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.865s
+user	0m1.845s
+sys	0m0.020s
+True positives: 8524
+False positives: 220
+False negatives: 365
+Precision: 0.975
+Recall: 0.959
+F-measure: 0.967
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.708s
+user	0m2.348s
+sys	0m0.360s
+True positives: 8889
+False positives: 211
+False negatives: 0
+Precision: 0.977
+Recall: 1.000
+F-measure: 0.988
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.812s
+user	0m0.759s
+sys	0m0.053s
+True positives: 8588
+False positives: 218
+False negatives: 301
+Precision: 0.975
+Recall: 0.966
+F-measure: 0.971
+=============================

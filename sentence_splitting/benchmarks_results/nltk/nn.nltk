@@ -1,0 +1,41 @@
+#################################
+nn (Norwegian-Nynorsk)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m4.240s
+user	0m4.212s
+sys	0m0.028s
+True positives: 15024
+False positives: 377
+False negatives: 2551
+Precision: 0.976
+Recall: 0.855
+F-measure: 0.911
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m5.106s
+user	0m4.445s
+sys	0m0.661s
+True positives: 17575
+False positives: 383
+False negatives: 0
+Precision: 0.979
+Recall: 1.000
+F-measure: 0.989
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.362s
+user	0m1.254s
+sys	0m0.108s
+True positives: 15513
+False positives: 378
+False negatives: 2062
+Precision: 0.976
+Recall: 0.883
+F-measure: 0.927
+=============================

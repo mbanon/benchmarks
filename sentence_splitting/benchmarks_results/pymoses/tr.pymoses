@@ -1,0 +1,38 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  pymoses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m8.683s
+user	0m7.715s
+sys	0m0.968s
+True positives: 10420
+False positives: 354
+False negatives: 2221
+Precision: 0.967
+Recall: 0.824
+F-measure: 0.890
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.073s
+user	0m1.068s
+sys	0m0.005s
+True positives: 12641
+False positives: 348
+False negatives: 0
+Precision: 0.973
+Recall: 1.000
+F-measure: 0.986
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.811s
+user	0m0.807s
+sys	0m0.005s
+True positives: 10788
+False positives: 354
+False negatives: 1853
+Precision: 0.968
+Recall: 0.853
+F-measure: 0.907

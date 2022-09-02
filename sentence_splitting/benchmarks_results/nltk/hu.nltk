@@ -1,0 +1,41 @@
+#################################
+hu (Hungarian)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.227s
+user	0m0.219s
+sys	0m0.008s
+True positives: 1783
+False positives: 73
+False negatives: 17
+Precision: 0.961
+Recall: 0.991
+F-measure: 0.975
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.706s
+user	0m0.638s
+sys	0m0.069s
+True positives: 1800
+False positives: 72
+False negatives: 0
+Precision: 0.962
+Recall: 1.000
+F-measure: 0.980
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.301s
+user	0m0.272s
+sys	0m0.029s
+True positives: 1787
+False positives: 71
+False negatives: 13
+Precision: 0.962
+Recall: 0.993
+F-measure: 0.977
+=============================

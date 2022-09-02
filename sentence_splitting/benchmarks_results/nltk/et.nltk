@@ -1,0 +1,41 @@
+#################################
+et (Estonian)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.891s
+user	0m0.862s
+sys	0m0.028s
+True positives: 8019
+False positives: 440
+False negatives: 656
+Precision: 0.948
+Recall: 0.924
+F-measure: 0.936
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.313s
+user	0m0.297s
+sys	0m0.016s
+True positives: 8675
+False positives: 341
+False negatives: 0
+Precision: 0.962
+Recall: 1.000
+F-measure: 0.981
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.326s
+user	0m0.310s
+sys	0m0.017s
+True positives: 8143
+False positives: 419
+False negatives: 532
+Precision: 0.951
+Recall: 0.939
+F-measure: 0.945
+=============================

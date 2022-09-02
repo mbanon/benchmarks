@@ -1,0 +1,44 @@
+#################################
+sk (Slovak)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.942s
+user	0m2.560s
+sys	0m0.076s
+True positives: 9564
+False positives: 106
+False negatives: 1040
+Precision: 0.989
+Recall: 0.902
+F-measure: 0.943
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.963s
+user	0m2.503s
+sys	0m0.113s
+True positives: 10604
+False positives: 106
+False negatives: 0
+Precision: 0.990
+Recall: 1.000
+F-measure: 0.995
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  language_tools.segment
+
+real	0m0.936s
+user	0m2.539s
+sys	0m0.061s
+True positives: 9737
+False positives: 106
+False negatives: 867
+Precision: 0.989
+Recall: 0.918
+F-measure: 0.952
+=============================

@@ -1,0 +1,44 @@
+#################################
+cnr (Montenegrin)
+Gold standard: MESUBS
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.445s
+user	0m1.218s
+sys	0m0.050s
+True positives: 19578
+False positives: 75
+False negatives: 422
+Precision: 0.996
+Recall: 0.979
+F-measure: 0.987
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.474s
+user	0m1.219s
+sys	0m0.045s
+True positives: 20000
+False positives: 75
+False negatives: 0
+Precision: 0.996
+Recall: 1.000
+F-measure: 0.998
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  NonAggressive
+
+real	0m0.495s
+user	0m1.297s
+sys	0m0.056s
+True positives: 19648
+False positives: 75
+False negatives: 352
+Precision: 0.996
+Recall: 0.982
+F-measure: 0.989
+=============================

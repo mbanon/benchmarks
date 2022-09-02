@@ -1,0 +1,38 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m3.076s
+user	0m2.996s
+sys	0m0.080s
+True positives: 11171
+False positives: 473
+False negatives: 1470
+Precision: 0.959
+Recall: 0.884
+F-measure: 0.920
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m2.581s
+user	0m2.493s
+sys	0m0.089s
+True positives: 12641
+False positives: 476
+False negatives: 0
+Precision: 0.964
+Recall: 1.000
+F-measure: 0.982
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m2.475s
+user	0m2.407s
+sys	0m0.069s
+True positives: 11414
+False positives: 474
+False negatives: 1227
+Precision: 0.960
+Recall: 0.903
+F-measure: 0.931

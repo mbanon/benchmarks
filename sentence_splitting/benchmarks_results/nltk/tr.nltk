@@ -1,0 +1,41 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.681s
+user	0m1.656s
+sys	0m0.024s
+True positives: 10770
+False positives: 563
+False negatives: 1871
+Precision: 0.950
+Recall: 0.852
+F-measure: 0.898
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.350s
+user	0m0.337s
+sys	0m0.013s
+True positives: 12641
+False positives: 560
+False negatives: 0
+Precision: 0.958
+Recall: 1.000
+F-measure: 0.978
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.387s
+user	0m0.368s
+sys	0m0.020s
+True positives: 11092
+False positives: 563
+False negatives: 1549
+Precision: 0.952
+Recall: 0.877
+F-measure: 0.913
+=============================

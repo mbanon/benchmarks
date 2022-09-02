@@ -1,0 +1,50 @@
+#################################
+bg (Bulgarian)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: bg
+WARNING: No known abbreviations for language 'bg', attempting fall-back to English version...
+
+real	0m12.058s
+user	0m12.034s
+sys	0m0.024s
+True positives: 9399
+False positives: 197
+False negatives: 1739
+Precision: 0.979
+Recall: 0.844
+F-measure: 0.907
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: bg
+WARNING: No known abbreviations for language 'bg', attempting fall-back to English version...
+
+real	0m11.753s
+user	0m11.721s
+sys	0m0.032s
+True positives: 9399
+False positives: 197
+False negatives: 1739
+Precision: 0.979
+Recall: 0.844
+F-measure: 0.907
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: bg
+WARNING: No known abbreviations for language 'bg', attempting fall-back to English version...
+
+real	0m11.722s
+user	0m11.694s
+sys	0m0.028s
+True positives: 9399
+False positives: 197
+False negatives: 1739
+Precision: 0.979
+Recall: 0.844
+F-measure: 0.907
+=============================

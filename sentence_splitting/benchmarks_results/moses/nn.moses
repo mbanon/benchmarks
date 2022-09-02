@@ -1,0 +1,50 @@
+#################################
+nn (Norwegian-Nynorsk)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: nn
+WARNING: No known abbreviations for language 'nn', attempting fall-back to English version...
+
+real	0m26.656s
+user	0m26.637s
+sys	0m0.016s
+True positives: 13475
+False positives: 237
+False negatives: 4100
+Precision: 0.983
+Recall: 0.767
+F-measure: 0.861
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: nn
+WARNING: No known abbreviations for language 'nn', attempting fall-back to English version...
+
+real	0m26.491s
+user	0m26.479s
+sys	0m0.009s
+True positives: 13475
+False positives: 237
+False negatives: 4100
+Precision: 0.983
+Recall: 0.767
+F-measure: 0.861
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: nn
+WARNING: No known abbreviations for language 'nn', attempting fall-back to English version...
+
+real	0m26.220s
+user	0m26.199s
+sys	0m0.021s
+True positives: 13475
+False positives: 237
+False negatives: 4100
+Precision: 0.983
+Recall: 0.767
+F-measure: 0.861
+=============================

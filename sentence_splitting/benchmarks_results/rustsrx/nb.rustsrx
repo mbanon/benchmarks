@@ -1,0 +1,38 @@
+#################################
+nb (Norwegian-Bokmaal)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m5.666s
+user	0m5.585s
+sys	0m0.080s
+True positives: 18123
+False positives: 383
+False negatives: 1922
+Precision: 0.979
+Recall: 0.904
+F-measure: 0.940
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m4.019s
+user	0m3.934s
+sys	0m0.085s
+True positives: 20045
+False positives: 388
+False negatives: 0
+Precision: 0.981
+Recall: 1.000
+F-measure: 0.990
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m4.399s
+user	0m4.314s
+sys	0m0.085s
+True positives: 18479
+False positives: 385
+False negatives: 1566
+Precision: 0.980
+Recall: 0.922
+F-measure: 0.950

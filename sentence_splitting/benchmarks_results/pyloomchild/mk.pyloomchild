@@ -1,0 +1,38 @@
+#################################
+mk (Macedonian)
+Gold standard: SETIMES
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.723s
+user	0m2.067s
+sys	0m0.117s
+True positives: 17062
+False positives: 1708
+False negatives: 2938
+Precision: 0.909
+Recall: 0.853
+F-measure: 0.880
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.312s
+user	0m3.508s
+sys	0m0.263s
+True positives: 20000
+False positives: 1708
+False negatives: 0
+Precision: 0.921
+Recall: 1.000
+F-measure: 0.959
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.863s
+user	0m2.715s
+sys	0m0.100s
+True positives: 17587
+False positives: 1708
+False negatives: 2413
+Precision: 0.911
+Recall: 0.879
+F-measure: 0.895

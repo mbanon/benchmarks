@@ -1,0 +1,41 @@
+#################################
+nb (Norwegian-Bokmaal)
+Gold standard: UD
+Tool:  ulysses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m3.952s
+user	0m3.724s
+sys	0m0.228s
+True positives: 14862
+False positives: 14
+False negatives: 5183
+Precision: 0.999
+Recall: 0.741
+F-measure: 0.851
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m3.310s
+user	0m3.281s
+sys	0m0.028s
+True positives: 20045
+False positives: 11
+False negatives: 0
+Precision: 0.999
+Recall: 1.000
+F-measure: 1.000
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m3.105s
+user	0m3.081s
+sys	0m0.024s
+True positives: 15803
+False positives: 13
+False negatives: 4242
+Precision: 0.999
+Recall: 0.788
+F-measure: 0.881
+=============================

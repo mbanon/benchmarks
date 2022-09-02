@@ -1,0 +1,41 @@
+#################################
+sk (Slovak)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.039s
+user	0m0.038s
+sys	0m0.002s
+True positives: 9535
+False positives: 1238
+False negatives: 1069
+Precision: 0.885
+Recall: 0.899
+F-measure: 0.892
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.054s
+user	0m0.048s
+sys	0m0.008s
+True positives: 10604
+False positives: 10772
+False negatives: 0
+Precision: 0.496
+Recall: 1.000
+F-measure: 0.663
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.046s
+user	0m0.044s
+sys	0m0.005s
+True positives: 9713
+False positives: 2991
+False negatives: 891
+Precision: 0.765
+Recall: 0.916
+F-measure: 0.833
+=============================

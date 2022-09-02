@@ -1,0 +1,38 @@
+#################################
+cnr (Montenegrin)
+Gold standard: MESUBS
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m2.386s
+user	0m2.306s
+sys	0m0.080s
+True positives: 19591
+False positives: 410
+False negatives: 409
+Precision: 0.980
+Recall: 0.980
+F-measure: 0.980
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.643s
+user	0m1.535s
+sys	0m0.109s
+True positives: 19999
+False positives: 417
+False negatives: 1
+Precision: 0.980
+Recall: 1.000
+F-measure: 0.990
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.911s
+user	0m1.811s
+sys	0m0.101s
+True positives: 19668
+False positives: 411
+False negatives: 332
+Precision: 0.980
+Recall: 0.983
+F-measure: 0.981

@@ -1,0 +1,41 @@
+#################################
+mk (Macedonian)
+Gold standard: SETIMES
+Tool:  nltk
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m9.711s
+user	0m9.671s
+sys	0m0.040s
+True positives: 17101
+False positives: 1720
+False negatives: 2899
+Precision: 0.909
+Recall: 0.855
+F-measure: 0.881
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m5.926s
+user	0m5.170s
+sys	0m0.756s
+True positives: 20000
+False positives: 1719
+False negatives: 0
+Precision: 0.921
+Recall: 1.000
+F-measure: 0.959
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.640s
+user	0m1.496s
+sys	0m0.144s
+True positives: 17624
+False positives: 1720
+False negatives: 2376
+Precision: 0.911
+Recall: 0.881
+F-measure: 0.896
+=============================

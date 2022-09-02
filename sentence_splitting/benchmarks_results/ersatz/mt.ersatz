@@ -1,0 +1,41 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.030s
+user	0m0.021s
+sys	0m0.011s
+True positives: 1845
+False positives: 252
+False negatives: 229
+Precision: 0.880
+Recall: 0.890
+F-measure: 0.885
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.028s
+user	0m0.022s
+sys	0m0.009s
+True positives: 2074
+False positives: 2096
+False negatives: 0
+Precision: 0.497
+Recall: 1.000
+F-measure: 0.664
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.032s
+user	0m0.034s
+sys	0m0.000s
+True positives: 1889
+False positives: 603
+False negatives: 185
+Precision: 0.758
+Recall: 0.911
+F-measure: 0.827
+=============================

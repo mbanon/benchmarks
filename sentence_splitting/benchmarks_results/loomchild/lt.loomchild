@@ -1,0 +1,44 @@
+#################################
+lt (Lithuanian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  OmegaT
+
+real	0m0.391s
+user	0m0.949s
+sys	0m0.048s
+True positives: 258
+False positives: 5
+False negatives: 5
+Precision: 0.981
+Recall: 0.981
+F-measure: 0.981
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  OmegaT
+
+real	0m0.385s
+user	0m0.897s
+sys	0m0.073s
+True positives: 263
+False positives: 5
+False negatives: 0
+Precision: 0.981
+Recall: 1.000
+F-measure: 0.991
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  OmegaT
+
+real	0m0.382s
+user	0m0.924s
+sys	0m0.045s
+True positives: 258
+False positives: 5
+False negatives: 5
+Precision: 0.981
+Recall: 0.981
+F-measure: 0.981
+=============================

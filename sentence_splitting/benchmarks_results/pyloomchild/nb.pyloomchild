@@ -1,0 +1,38 @@
+#################################
+nb (Norwegian-Bokmaal)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.624s
+user	0m1.732s
+sys	0m0.091s
+True positives: 18851
+False positives: 680
+False negatives: 1194
+Precision: 0.965
+Recall: 0.940
+F-measure: 0.953
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.265s
+user	0m3.877s
+sys	0m0.256s
+True positives: 20045
+False positives: 744
+False negatives: 0
+Precision: 0.964
+Recall: 1.000
+F-measure: 0.982
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.724s
+user	0m2.210s
+sys	0m0.148s
+True positives: 19062
+False positives: 693
+False negatives: 983
+Precision: 0.965
+Recall: 0.951
+F-measure: 0.958

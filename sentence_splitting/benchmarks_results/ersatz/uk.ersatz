@@ -1,0 +1,41 @@
+#################################
+uk (Ukrainian)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.038s
+user	0m0.035s
+sys	0m0.005s
+True positives: 5621
+False positives: 756
+False negatives: 245
+Precision: 0.881
+Recall: 0.958
+F-measure: 0.918
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.048s
+user	0m0.043s
+sys	0m0.008s
+True positives: 5866
+False positives: 6376
+False negatives: 0
+Precision: 0.479
+Recall: 1.000
+F-measure: 0.648
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.041s
+user	0m0.029s
+sys	0m0.015s
+True positives: 5666
+False positives: 1771
+False negatives: 200
+Precision: 0.762
+Recall: 0.966
+F-measure: 0.852
+=============================

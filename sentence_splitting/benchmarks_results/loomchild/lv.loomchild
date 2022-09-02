@@ -1,0 +1,44 @@
+#################################
+lv (Latvian)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  PTDR
+
+real	0m0.446s
+user	0m1.117s
+sys	0m0.048s
+True positives: 5901
+False positives: 108
+False negatives: 395
+Precision: 0.982
+Recall: 0.937
+F-measure: 0.959
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  PTDR
+
+real	0m0.441s
+user	0m1.105s
+sys	0m0.046s
+True positives: 6296
+False positives: 108
+False negatives: 0
+Precision: 0.983
+Recall: 1.000
+F-measure: 0.991
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  PTDR
+
+real	0m0.446s
+user	0m1.196s
+sys	0m0.028s
+True positives: 5973
+False positives: 108
+False negatives: 323
+Precision: 0.982
+Recall: 0.949
+F-measure: 0.965
+=============================

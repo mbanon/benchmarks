@@ -1,0 +1,47 @@
+#################################
+el (Greek)
+Gold standard: UD
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: el
+
+real	0m1.095s
+user	0m1.082s
+sys	0m0.012s
+True positives: 2294
+False positives: 16
+False negatives: 227
+Precision: 0.993
+Recall: 0.910
+F-measure: 0.950
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: el
+
+real	0m1.103s
+user	0m1.087s
+sys	0m0.016s
+True positives: 2294
+False positives: 16
+False negatives: 227
+Precision: 0.993
+Recall: 0.910
+F-measure: 0.950
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: el
+
+real	0m1.116s
+user	0m1.112s
+sys	0m0.004s
+True positives: 2294
+False positives: 16
+False negatives: 227
+Precision: 0.993
+Recall: 0.910
+F-measure: 0.950
+=============================

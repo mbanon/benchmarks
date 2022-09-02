@@ -1,0 +1,38 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.005s
+user	0m0.946s
+sys	0m0.060s
+True positives: 1878
+False positives: 169
+False negatives: 196
+Precision: 0.917
+Recall: 0.905
+F-measure: 0.911
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.837s
+user	0m0.777s
+sys	0m0.060s
+True positives: 2074
+False positives: 169
+False negatives: 0
+Precision: 0.925
+Recall: 1.000
+F-measure: 0.961
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.838s
+user	0m0.786s
+sys	0m0.052s
+True positives: 1915
+False positives: 169
+False negatives: 159
+Precision: 0.919
+Recall: 0.923
+F-measure: 0.921

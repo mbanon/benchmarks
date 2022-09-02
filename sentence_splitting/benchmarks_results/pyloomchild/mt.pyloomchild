@@ -1,0 +1,38 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  pyloomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.464s
+user	0m1.150s
+sys	0m0.060s
+True positives: 1836
+False positives: 147
+False negatives: 238
+Precision: 0.926
+Recall: 0.885
+F-measure: 0.905
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.629s
+user	0m1.749s
+sys	0m0.089s
+True positives: 2074
+False positives: 147
+False negatives: 0
+Precision: 0.934
+Recall: 1.000
+F-measure: 0.966
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.511s
+user	0m1.355s
+sys	0m0.060s
+True positives: 1881
+False positives: 147
+False negatives: 193
+Precision: 0.928
+Recall: 0.907
+F-measure: 0.917

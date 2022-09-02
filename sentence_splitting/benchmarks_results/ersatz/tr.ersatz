@@ -1,0 +1,41 @@
+#################################
+tr (Turkish)
+Gold standard: UD
+Tool:  ersatz
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m0.049s
+user	0m0.029s
+sys	0m0.022s
+True positives: 11021
+False positives: 2165
+False negatives: 1620
+Precision: 0.836
+Recall: 0.872
+F-measure: 0.853
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m0.061s
+user	0m0.059s
+sys	0m0.004s
+True positives: 12641
+False positives: 13185
+False negatives: 0
+Precision: 0.489
+Recall: 1.000
+F-measure: 0.657
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m0.047s
+user	0m0.043s
+sys	0m0.006s
+True positives: 11290
+False positives: 4207
+False negatives: 1351
+Precision: 0.729
+Recall: 0.893
+F-measure: 0.802
+=============================

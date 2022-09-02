@@ -1,0 +1,38 @@
+#################################
+sr (Serbian)
+Gold standard: UD
+Tool:  rustsrx
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+
+real	0m1.833s
+user	0m1.781s
+sys	0m0.052s
+True positives: 3718
+False positives: 619
+False negatives: 173
+Precision: 0.857
+Recall: 0.956
+F-measure: 0.904
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+
+real	0m1.442s
+user	0m1.386s
+sys	0m0.056s
+True positives: 3891
+False positives: 619
+False negatives: 0
+Precision: 0.863
+Recall: 1.000
+F-measure: 0.926
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+
+real	0m1.460s
+user	0m1.412s
+sys	0m0.048s
+True positives: 3743
+False positives: 619
+False negatives: 148
+Precision: 0.858
+Recall: 0.962
+F-measure: 0.907

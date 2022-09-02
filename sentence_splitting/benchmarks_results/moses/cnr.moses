@@ -1,0 +1,48 @@
+#################################
+cnr (Montenegrin)
+Gold standard: MESUBS
+Tool:  moses
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Sentence Splitter v3
+Language: cnr
+WARNING: No known abbreviations for language 'cnr', attempting fall-back to English version...
+
+real	0m1.905s
+user	0m1.897s
+sys	0m0.008s
+True positives: 17251
+False positives: 5
+False negatives: 2749
+Precision: 1.000
+Recall: 0.863
+F-measure: 0.926
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Sentence Splitter v3
+Language: cnr
+WARNING: No known abbreviations for language 'cnr', attempting fall-back to English version...
+
+real	0m0.962s
+user	0m0.954s
+sys	0m0.008s
+Traceback (most recent call last):
+  File "/home/mbanon/benchmarks/sentence_splitting/segmenteval.py", line 29, in <module>
+    assert g_rep == t_rep
+AssertionError
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Sentence Splitter v3
+Language: cnr
+WARNING: No known abbreviations for language 'cnr', attempting fall-back to English version...
+
+real	0m1.819s
+user	0m1.811s
+sys	0m0.008s
+True positives: 17251
+False positives: 5
+False negatives: 2749
+Precision: 1.000
+Recall: 0.863
+F-measure: 0.926
+=============================

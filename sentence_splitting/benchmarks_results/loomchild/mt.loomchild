@@ -1,0 +1,44 @@
+#################################
+mt (Maltese)
+Gold standard: UD
+Tool:  loomchild
+#################################
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
+Loomchild SRX rules:  PTDR
+
+real	0m0.409s
+user	0m0.968s
+sys	0m0.072s
+True positives: 1840
+False positives: 142
+False negatives: 234
+Precision: 0.928
+Recall: 0.887
+F-measure: 0.907
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
+Loomchild SRX rules:  PTDR
+
+real	0m0.417s
+user	0m0.989s
+sys	0m0.054s
+True positives: 2074
+False positives: 142
+False negatives: 0
+Precision: 0.936
+Recall: 1.000
+F-measure: 0.967
+=============================
+Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
+Loomchild SRX rules:  PTDR
+
+real	0m0.432s
+user	0m1.036s
+sys	0m0.064s
+True positives: 1884
+False positives: 142
+False negatives: 190
+Precision: 0.930
+Recall: 0.908
+F-measure: 0.919
+=============================
