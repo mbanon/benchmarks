@@ -5,9 +5,9 @@ Tool:  rustsrx
 #################################
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
 
-real	0m4.127s
-user	0m4.034s
-sys	0m0.092s
+real	0m6.572s
+user	0m6.448s
+sys	0m0.124s
 True positives: 12969
 False positives: 633
 False negatives: 3653
@@ -16,9 +16,9 @@ Recall: 0.780
 F-measure: 0.858
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
 
-real	0m0.567s
-user	0m0.484s
-sys	0m0.084s
+real	0m1.027s
+user	0m0.911s
+sys	0m0.116s
 True positives: 16622
 False positives: 636
 False negatives: 0
@@ -27,9 +27,9 @@ Recall: 1.000
 F-measure: 0.981
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
 
-real	0m0.540s
-user	0m0.452s
-sys	0m0.088s
+real	0m1.011s
+user	0m0.872s
+sys	0m0.140s
 True positives: 13616
 False positives: 633
 False negatives: 3006

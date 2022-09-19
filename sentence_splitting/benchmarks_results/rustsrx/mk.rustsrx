@@ -5,34 +5,34 @@ Tool:  rustsrx
 #################################
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
 
-real	0m11.345s
-user	0m11.257s
-sys	0m0.088s
-True positives: 17127
-False positives: 1914
-False negatives: 2873
-Precision: 0.899
-Recall: 0.856
-F-measure: 0.877
+real	0m0.415s
+user	0m0.367s
+sys	0m0.048s
+True positives: 1
+False positives: 0
+False negatives: 19999
+Precision: 1.000
+Recall: 0.000
+F-measure: 0.000
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
 
-real	0m9.370s
-user	0m9.278s
-sys	0m0.092s
+real	0m0.447s
+user	0m0.350s
+sys	0m0.096s
 True positives: 20000
-False positives: 1914
+False positives: 0
 False negatives: 0
-Precision: 0.913
+Precision: 1.000
 Recall: 1.000
-F-measure: 0.954
+F-measure: 1.000
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
 
-real	0m9.010s
-user	0m8.898s
-sys	0m0.113s
-True positives: 17642
-False positives: 1914
-False negatives: 2358
-Precision: 0.902
-Recall: 0.882
-F-measure: 0.892
+real	0m0.400s
+user	0m0.328s
+sys	0m0.072s
+True positives: 3657
+False positives: 0
+False negatives: 16343
+Precision: 1.000
+Recall: 0.183
+F-measure: 0.309
