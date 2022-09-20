@@ -214,7 +214,7 @@ do
                 rustsrx)
                 	#git clone https://github.com/lpla/srx
                 	#cargo build --all-features --release
-                	time $RUSTSRX_PATH/srx --input $TESTFILE --output $OUTFILE --srxfile srxrules/rust.srx --language $LC
+                	time $RUSTSRX_PATH/srx --input $TESTFILE --output $OUTFILE --srxfile srxrules/examplesrust.srx --language $LC
                         $PYTHON segmenteval.py $GOLD $OUTFILE
 			;;                	
                 *)

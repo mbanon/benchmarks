@@ -6,9 +6,9 @@ Tool:  loomchild
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
 Loomchild SRX rules:  PTDR
 
-real	0m0.522s
-user	0m1.289s
-sys	0m0.074s
+real	0m0.944s
+user	0m2.377s
+sys	0m0.122s
 True positives: 12906
 False positives: 263
 False negatives: 2230
@@ -19,9 +19,9 @@ F-measure: 0.912
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
 Loomchild SRX rules:  PTDR
 
-real	0m0.558s
-user	0m1.410s
-sys	0m0.057s
+real	0m1.061s
+user	0m2.760s
+sys	0m0.148s
 True positives: 15136
 False positives: 263
 False negatives: 0
@@ -32,9 +32,9 @@ F-measure: 0.991
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
 Loomchild SRX rules:  PTDR
 
-real	0m0.522s
-user	0m1.382s
-sys	0m0.073s
+real	0m1.020s
+user	0m2.661s
+sys	0m0.088s
 True positives: 13307
 False positives: 263
 False negatives: 1829

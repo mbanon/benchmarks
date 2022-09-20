@@ -6,9 +6,9 @@ Tool:  loomchild
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): none
 Loomchild SRX rules:  OmegaT
 
-real	0m0.783s
-user	0m2.019s
-sys	0m0.140s
+real	0m1.183s
+user	0m3.198s
+sys	0m0.118s
 True positives: 71529
 False positives: 3795
 False negatives: 16384
@@ -19,9 +19,9 @@ F-measure: 0.876
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): all
 Loomchild SRX rules:  OmegaT
 
-real	0m0.800s
-user	0m2.045s
-sys	0m0.114s
+real	0m1.446s
+user	0m4.074s
+sys	0m0.136s
 True positives: 87913
 False positives: 3795
 False negatives: 0
@@ -32,9 +32,9 @@ F-measure: 0.979
 Testset segmentation (none: no line breaks; all: same as gold standard; mixed: paragraph-like text): mixed
 Loomchild SRX rules:  OmegaT
 
-real	0m0.799s
-user	0m2.135s
-sys	0m0.157s
+real	0m1.596s
+user	0m4.167s
+sys	0m0.219s
 True positives: 74461
 False positives: 3795
 False negatives: 13452
