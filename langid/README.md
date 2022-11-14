@@ -14,10 +14,10 @@ Benchmarked tools:
 * [fasttext](https://fasttext.cc/docs/en/language-identification.html): FastText is a library for text classification and representation. It transforms text into continuous vectors that can later be used on any language related task.
 * [hunspell](http://hunspell.github.io/): Spellchecker
 * [FastSpell](https://github.com/mbanon/fastspell): Targetted language identificator, based on FastText and Hunspell
+* [HeLI-OTS](https://zenodo.org/record/7066611): HeLI off-the-shelf language identifier with language models for 200 languages.
 
 
-
-Run each lang-**.py file, for example:
+Run each lang-\*\*.py file, for example:
 
 ```
 cat testsets/gold/goldstandard.gl  | python3.7 lang-cld3.py 
@@ -38,3 +38,17 @@ Test files are located under `/testsets/`, being `/testsets/gold/goldstandard.??
 Gold standards were extracted from [Paracrawl](http://paracrawl.eu) human evaluations (sentences tagged as "Valid"): https://github.com/paracrawl/human-evaluations/tree/master/paracrawl-v7-validation 
 
 Some benchmark results as in June'21: https://docs.google.com/spreadsheets/d/1KeSeFnLmBREoC6-wdWCaMVUEtcRkW5EvafMT1SFf560/edit#gid=1044630170 
+
+
+## Installation
+### HeLI-OTS
+Install Zenodo downloader:
+```
+pip install zenodo_get
+```
+and download HeLI:
+```
+mkdir heliots && cd heliots
+zenodo_get 7066611
+cd ..
+```
