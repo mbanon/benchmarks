@@ -12,7 +12,7 @@ start_time = timeit.default_timer()
 lang=sys.argv[1]
 #fsobj = FastSpell.FastSpell(lang, mode="aggr")
 
-fs = fastspell.FastSpell(lang, mode="aggr")
+fs = fastspell.FastSpell(lang, mode="cons")
 
 for line in sys.stdin:
     parts = line.strip().split("\t")
