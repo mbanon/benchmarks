@@ -37,7 +37,7 @@ for L in ca da es gl nb nn bg bs cs el hr me mk ro sk sl sq sr tr; do echo $L &&
 Test files are located under `/testsets/`, being `/testsets/gold/goldstandard.??` the gold standards (all sentences are in the target language), and `/testsets/antigold/not.??` (all sentences in languages that are not the target language).
 Gold standards were extracted from [Paracrawl](http://paracrawl.eu) human evaluations (sentences tagged as "Valid"): https://github.com/paracrawl/human-evaluations/tree/master/paracrawl-v7-validation 
 
-Some benchmark results as in June'21: https://docs.google.com/spreadsheets/d/1KeSeFnLmBREoC6-wdWCaMVUEtcRkW5EvafMT1SFf560/edit#gid=1044630170 
+Some benchmark results as in March'24: https://docs.google.com/spreadsheets/d/158ZRWMgRH5TptlFWpKyh5uRL5jTkKW1d4KGJg1AZf7A/edit?usp=sharing
 
 
 ## Installation
